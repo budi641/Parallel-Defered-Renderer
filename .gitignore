@@ -30,4 +30,9 @@
 *.exe
 *.out
 *.app
-/api
+
+/api/assimp
+/api/glad
+/api/glfw
+/api/glm
+/api/imgui
