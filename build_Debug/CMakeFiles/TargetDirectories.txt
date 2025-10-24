@@ -1,0 +1,17 @@
+D:/Parallel-Defered-Renderer/build_Debug/CMakeFiles/Parallel-Deferred-Renderer.dir
+D:/Parallel-Defered-Renderer/build_Debug/CMakeFiles/INSTALL.dir
+D:/Parallel-Defered-Renderer/build_Debug/CMakeFiles/ALL_BUILD.dir
+D:/Parallel-Defered-Renderer/build_Debug/CMakeFiles/ZERO_CHECK.dir
+D:/Parallel-Defered-Renderer/build_Debug/api/glfw/CMakeFiles/uninstall.dir
+D:/Parallel-Defered-Renderer/build_Debug/api/glfw/CMakeFiles/INSTALL.dir
+D:/Parallel-Defered-Renderer/build_Debug/api/glfw/CMakeFiles/ALL_BUILD.dir
+D:/Parallel-Defered-Renderer/build_Debug/api/glfw/src/CMakeFiles/glfw.dir
+D:/Parallel-Defered-Renderer/build_Debug/api/glfw/src/CMakeFiles/INSTALL.dir
+D:/Parallel-Defered-Renderer/build_Debug/api/assimp/CMakeFiles/UpdateAssimpLibsDebugSymbolsAndDLLs.dir
+D:/Parallel-Defered-Renderer/build_Debug/api/assimp/CMakeFiles/INSTALL.dir
+D:/Parallel-Defered-Renderer/build_Debug/api/assimp/CMakeFiles/ALL_BUILD.dir
+D:/Parallel-Defered-Renderer/build_Debug/api/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir
+D:/Parallel-Defered-Renderer/build_Debug/api/assimp/contrib/zlib/CMakeFiles/INSTALL.dir
+D:/Parallel-Defered-Renderer/build_Debug/api/assimp/contrib/zlib/CMakeFiles/ALL_BUILD.dir
+D:/Parallel-Defered-Renderer/build_Debug/api/assimp/code/CMakeFiles/assimp.dir
+D:/Parallel-Defered-Renderer/build_Debug/api/assimp/code/CMakeFiles/INSTALL.dir

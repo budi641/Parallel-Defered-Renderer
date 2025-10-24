@@ -1,0 +1,11 @@
+prefix=C:/Program Files (x86)/Parallel-Deferred-Renderer
+exec_prefix=C:/Program Files (x86)/Parallel-Deferred-Renderer/bin
+libdir=C:/Program Files (x86)/Parallel-Deferred-Renderer/lib
+includedir=C:/Program Files (x86)/Parallel-Deferred-Renderer/include/assimp
+
+Name: Parallel-Deferred-Renderer
+Description: Import various well-known 3D model formats in an uniform manner.
+Version: 3.2.0
+Libs: -L${libdir} -lassimp
+Libs.private:  
+Cflags: -I${includedir}

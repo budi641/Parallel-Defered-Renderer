@@ -1,0 +1,13 @@
+D:\Parallel-Defered-Renderer\api\glfw\src\context.c;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw.dir\Debug\context.obj
+D:\Parallel-Defered-Renderer\api\glfw\src\init.c;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw.dir\Debug\init.obj
+D:\Parallel-Defered-Renderer\api\glfw\src\input.c;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw.dir\Debug\input.obj
+D:\Parallel-Defered-Renderer\api\glfw\src\monitor.c;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw.dir\Debug\monitor.obj
+D:\Parallel-Defered-Renderer\api\glfw\src\vulkan.c;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw.dir\Debug\vulkan.obj
+D:\Parallel-Defered-Renderer\api\glfw\src\window.c;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw.dir\Debug\window.obj
+D:\Parallel-Defered-Renderer\api\glfw\src\win32_init.c;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw.dir\Debug\win32_init.obj
+D:\Parallel-Defered-Renderer\api\glfw\src\win32_joystick.c;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw.dir\Debug\win32_joystick.obj
+D:\Parallel-Defered-Renderer\api\glfw\src\win32_monitor.c;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw.dir\Debug\win32_monitor.obj
+D:\Parallel-Defered-Renderer\api\glfw\src\win32_time.c;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw.dir\Debug\win32_time.obj
+D:\Parallel-Defered-Renderer\api\glfw\src\win32_tls.c;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw.dir\Debug\win32_tls.obj
+D:\Parallel-Defered-Renderer\api\glfw\src\win32_window.c;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw.dir\Debug\win32_window.obj
+D:\Parallel-Defered-Renderer\api\glfw\src\wgl_context.c;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw.dir\Debug\wgl_context.obj

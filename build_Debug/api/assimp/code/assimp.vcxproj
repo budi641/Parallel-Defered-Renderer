@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7F2709E9-CB67-359E-9BED-EC925779ED4D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>assimp</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\assimp\code\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assimp.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">assimp-vc140-mtd</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\assimp\code\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assimp.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">assimp-vc140-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\assimp\code\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">assimp.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">assimp-vc140-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\assimp\code\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">assimp.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">assimp-vc140-mt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\build_Debug\api\assimp;D:\Parallel-Defered-Renderer\api\assimp\include;D:\Parallel-Defered-Renderer\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\rapidjson\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\openddlparser\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\unzip;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\build_Debug\api\assimp;D:\Parallel-Defered-Renderer\api\assimp\include;D:\Parallel-Defered-Renderer\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\rapidjson\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\openddlparser\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\unzip;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\build_Debug\api\assimp;D:\Parallel-Defered-Renderer\api\assimp\include;D:\Parallel-Defered-Renderer\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\rapidjson\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\openddlparser\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\unzip;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\build_Debug\api\assimp;D:\Parallel-Defered-Renderer\api\assimp\include;D:\Parallel-Defered-Renderer\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\rapidjson\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\openddlparser\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\unzip;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\build_Debug\api\assimp;D:\Parallel-Defered-Renderer\api\assimp\include;D:\Parallel-Defered-Renderer\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\rapidjson\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\openddlparser\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\unzip;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\build_Debug\api\assimp;D:\Parallel-Defered-Renderer\api\assimp\include;D:\Parallel-Defered-Renderer\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\rapidjson\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\openddlparser\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\unzip;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\build_Debug\api\assimp;D:\Parallel-Defered-Renderer\api\assimp\include;D:\Parallel-Defered-Renderer\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\rapidjson\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\openddlparser\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\unzip;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\build_Debug\api\assimp;D:\Parallel-Defered-Renderer\api\assimp\include;D:\Parallel-Defered-Renderer\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\rapidjson\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\openddlparser\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\unzip;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\build_Debug\api\assimp;D:\Parallel-Defered-Renderer\api\assimp\include;D:\Parallel-Defered-Renderer\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\rapidjson\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\openddlparser\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\unzip;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\build_Debug\api\assimp;D:\Parallel-Defered-Renderer\api\assimp\include;D:\Parallel-Defered-Renderer\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\rapidjson\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\openddlparser\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\unzip;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDL_NO_USE_CPP11;ASSIMP_BUILD_NO_C4D_IMPORTER;ASSIMP_BUILD_DLL_EXPORT;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;OPENDDLPARSER_BUILD;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\build_Debug\api\assimp;D:\Parallel-Defered-Renderer\api\assimp\include;D:\Parallel-Defered-Renderer\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\rapidjson\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\openddlparser\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\unzip;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\build_Debug\api\assimp;D:\Parallel-Defered-Renderer\api\assimp\include;D:\Parallel-Defered-Renderer\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\rapidjson\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\openddlparser\include;D:\Parallel-Defered-Renderer\api\assimp\code\..\contrib\unzip;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Parallel-Defered-Renderer\api\assimp\code\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Parallel-Defered-Renderer/api/assimp/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-file D:/Parallel-Defered-Renderer/build_Debug/api/assimp/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\assimp\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Parallel-Defered-Renderer/api/assimp/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-file D:/Parallel-Defered-Renderer/build_Debug/api/assimp/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\assimp\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Parallel-Defered-Renderer/api/assimp/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-file D:/Parallel-Defered-Renderer/build_Debug/api/assimp/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\assimp\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Parallel-Defered-Renderer/api/assimp/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-file D:/Parallel-Defered-Renderer/build_Debug/api/assimp/code/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\assimp\code\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Assimp.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\fast_atof.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\qnan.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BaseImporter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BaseImporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BaseProcess.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BaseProcess.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Importer.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ScenePrivate.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\PostStepRegistry.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ImporterRegistry.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ByteSwapper.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\DefaultProgressHandler.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\DefaultIOStream.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\DefaultIOStream.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\DefaultIOSystem.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\DefaultIOSystem.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\CInterfaceIOWrapper.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Hash.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Importer.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFF.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MemoryIOWrapper.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ParsingUtils.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\StreamReader.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\StreamWriter.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\StringComparison.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\StringUtils.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SGSpatialSort.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SGSpatialSort.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\VertexTriangleAdjacency.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\VertexTriangleAdjacency.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\GenericProperty.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SpatialSort.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SpatialSort.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SceneCombiner.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SceneCombiner.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ScenePreprocessor.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ScenePreprocessor.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SkeletonMeshBuilder.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SkeletonMeshBuilder.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SplitByBoneCountProcess.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SplitByBoneCountProcess.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SmoothingGroups.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\StandardShapes.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\StandardShapes.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\TargetAnimation.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\TargetAnimation.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\RemoveComments.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\RemoveComments.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Subdivision.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Subdivision.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Vertex.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\LineSplitter.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\TinyFormatter.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Profiler.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\LogAux.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Bitmap.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Bitmap.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\XMLTools.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Version.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\DefaultLogger.hpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\LogStream.hpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\Logger.hpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\NullLogger.hpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Win32DebugLogStream.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\DefaultLogger.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FileLogStream.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\StdOStreamLogStream.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Exporter.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\AssimpCExport.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlobIOSystem.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\CalcTangentsProcess.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\CalcTangentsProcess.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ComputeUVMappingProcess.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ComputeUVMappingProcess.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ConvertToLHProcess.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ConvertToLHProcess.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FindDegenerates.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FindDegenerates.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FindInstancesProcess.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FindInstancesProcess.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FindInvalidDataProcess.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FindInvalidDataProcess.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FixNormalsStep.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FixNormalsStep.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\GenFaceNormalsProcess.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\GenFaceNormalsProcess.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\GenVertexNormalsProcess.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\GenVertexNormalsProcess.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\PretransformVertices.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\PretransformVertices.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ImproveCacheLocality.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ImproveCacheLocality.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\JoinVerticesProcess.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\JoinVerticesProcess.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\LimitBoneWeightsProcess.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\LimitBoneWeightsProcess.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\RemoveRedundantMaterials.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\RemoveRedundantMaterials.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\RemoveVCProcess.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\RemoveVCProcess.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SortByPTypeProcess.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SortByPTypeProcess.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SplitLargeMeshes.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SplitLargeMeshes.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\TextureTransform.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\TextureTransform.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\TriangulateProcess.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\TriangulateProcess.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ValidateDataStructure.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ValidateDataStructure.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OptimizeGraph.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OptimizeGraph.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OptimizeMeshes.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OptimizeMeshes.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\DeboneProcess.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\DeboneProcess.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ProcessHelper.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ProcessHelper.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\PolyTools.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MakeVerboseFormat.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MakeVerboseFormat.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MaterialSystem.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MaterialSystem.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\StepExporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\StepExporter.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\3DSConverter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\3DSHelper.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\3DSLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\3DSLoader.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\3DSExporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\3DSExporter.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ACLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ACLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ASELoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ASELoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ASEParser.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ASEParser.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\AssbinExporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\AssbinExporter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\AssbinLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\AssbinLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\AssxmlExporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\AssxmlExporter.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\B3DImporter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\B3DImporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BVHLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BVHLoader.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ColladaHelper.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ColladaLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ColladaLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ColladaParser.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ColladaParser.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ColladaExporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ColladaExporter.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\DXFLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\DXFLoader.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\DXFHelper.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\CSMLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\CSMLoader.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\HMPFileData.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\HMPLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\HMPLoader.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\HalfLifeFileData.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IRRLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\IRRLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IRRMeshLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\IRRMeshLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IRRShared.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\IRRShared.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWOAnimation.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWOAnimation.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWOBLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWOFileData.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWOLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWOLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWOMaterial.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWSLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWSLoader.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD2FileData.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD2Loader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD2Loader.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD2NormalTable.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD3FileData.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD3Loader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD3Loader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD5Loader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD5Loader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD5Parser.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD5Parser.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDCFileData.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDCLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDCLoader.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDCNormalTable.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDLDefaultColorMap.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDLFileData.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDLLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDLLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDLMaterialLoader.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\NFFLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\NFFLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\NDOLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\NDOLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OFFLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OFFLoader.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjFileData.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjFileImporter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjFileImporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjFileMtlImporter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjFileMtlImporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjFileParser.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjFileParser.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjTools.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjExporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjExporter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreImporter.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreStructs.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreParsingUtils.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreBinarySerializer.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreXmlSerializer.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreImporter.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreStructs.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreBinarySerializer.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreXmlSerializer.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreMaterial.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OpenGEXExporter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OpenGEXExporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OpenGEXImporter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OpenGEXImporter.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OpenGEXStructs.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\PlyLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\PlyLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\PlyParser.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\PlyParser.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\PlyExporter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\PlyExporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MS3DLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MS3DLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\COBLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\COBLoader.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\COBScene.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderDNA.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderDNA.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderDNA.inl" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderScene.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderScene.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderSceneGen.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderIntermediate.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderModifier.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderModifier.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderBMesh.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderBMesh.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderTessellator.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderTessellator.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCReaderGen.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCReaderGen.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCUtil.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCUtil.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCGeometry.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCMaterial.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCProfile.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCCurve.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCBoolean.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCOpenings.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\STEPFile.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\STEPFileReader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\STEPFileReader.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\STEPFileEncoding.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\STEPFileEncoding.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\XGLLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\XGLLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXImporter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXCompileConfig.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXImporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXParser.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXParser.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXTokenizer.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXTokenizer.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXImportSettings.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXConverter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXConverter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXUtil.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXUtil.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXDocument.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXDocument.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXProperties.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXProperties.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXMeshGeometry.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXMeshGeometry.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXMaterial.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXModel.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXAnimation.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXNodeAttribute.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXDeformer.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXBinaryTokenizer.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXDocumentUtil.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3DLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3DLoader.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3BSPFileData.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3BSPFileParser.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3BSPFileParser.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3BSPFileImporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3BSPFileImporter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3BSPZipArchive.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3BSPZipArchive.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\RawLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\RawLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SIBImporter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SIBImporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SMDLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SMDLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\STLLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\STLLoader.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\STLExporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\STLExporter.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\TerragenLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\TerragenLoader.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\UnrealLoader.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\UnrealLoader.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\XFileHelper.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\XFileImporter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\XFileImporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\XFileParser.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\XFileParser.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\XFileExporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\XFileExporter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\glTFAsset.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\glTFAsset.inl" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\glTFAssetWriter.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\glTFAssetWriter.inl" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\glTFImporter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\glTFImporter.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\glTFExporter.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\glTFExporter.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\irrXMLWrapper.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\CXMLReaderImpl.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\heapsort.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\irrArray.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\irrString.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\irrTypes.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\irrXML.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\irrXML.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\ConvertUTF\ConvertUTF.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\ConvertUTF\ConvertUTF.c" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\unzip\crypt.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\unzip\ioapi.c" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\unzip\ioapi.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\unzip\unzip.c" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\unzip\unzip.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\common\shapes.cc" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\common\shapes.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\common\utils.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\advancing_front.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\advancing_front.cc" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\cdt.cc" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\cdt.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\sweep.cc" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\sweep.h" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\sweep_context.cc" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\sweep_context.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\clipper\clipper.hpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\clipper\clipper.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\code\OpenDDLParser.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\code\DDLNode.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\code\OpenDDLCommon.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\code\OpenDDLExport.cpp" />
+    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\code\Value.cpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\OpenDDLParser.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\OpenDDLParserUtils.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\OpenDDLCommon.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\OpenDDLExport.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\DDLNode.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\Value.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\anim.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\ai_assert.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\camera.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\color4.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\color4.inl" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\config.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\defs.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\cfileio.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\light.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\material.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\material.inl" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\matrix3x3.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\matrix3x3.inl" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\matrix4x4.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\matrix4x4.inl" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\mesh.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\postprocess.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\quaternion.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\quaternion.inl" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\scene.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\metadata.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\texture.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\types.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\vector2.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\vector2.inl" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\vector3.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\vector3.inl" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\version.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\cimport.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\importerdesc.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\Importer.hpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\ProgressHandler.hpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\IOStream.hpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\IOSystem.hpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\cexport.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\Exporter.hpp" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\Compiler\pushpack1.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\Compiler\poppack1.h" />
+    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\Compiler\pstdint.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Parallel-Defered-Renderer\build_Debug\ZERO_CHECK.vcxproj">
+      <Project>{6BFC4548-6EE7-387E-9E10-DF5EFDDF2576}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\zlibstatic.vcxproj">
+      <Project>{9FB0E4BF-8452-3427-8BE4-01CD43924221}</Project>
+      <Name>zlibstatic</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

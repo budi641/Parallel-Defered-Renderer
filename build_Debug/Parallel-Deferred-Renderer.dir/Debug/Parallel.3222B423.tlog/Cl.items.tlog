@@ -1,0 +1,14 @@
+D:\Parallel-Defered-Renderer\src\camera\camera.cpp;D:\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\camera.obj
+D:\Parallel-Defered-Renderer\src\lighting\light.cpp;D:\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\light.obj
+D:\Parallel-Defered-Renderer\src\mesh\mesh.cpp;D:\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\mesh.obj
+D:\Parallel-Defered-Renderer\src\mesh\model.cpp;D:\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\model.obj
+D:\Parallel-Defered-Renderer\src\renderer\parallel-deferred-renderer.cpp;D:\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\parallel-deferred-renderer.obj
+D:\Parallel-Defered-Renderer\src\resources\material.cpp;D:\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\material.obj
+D:\Parallel-Defered-Renderer\src\resources\shader.cpp;D:\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\shader.obj
+D:\Parallel-Defered-Renderer\src\resources\shape.cpp;D:\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\shape.obj
+D:\Parallel-Defered-Renderer\src\resources\skybox.cpp;D:\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\skybox.obj
+D:\Parallel-Defered-Renderer\src\resources\texture.cpp;D:\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\texture.obj
+D:\Parallel-Defered-Renderer\api\glad\src\glad.c;D:\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\glad.obj
+D:\Parallel-Defered-Renderer\api\imgui\imgui.cpp;D:\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\imgui.obj
+D:\Parallel-Defered-Renderer\api\imgui\imgui_draw.cpp;D:\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\imgui_draw.obj
+D:\Parallel-Defered-Renderer\api\imgui\imgui_impl_glfw_gl3.cpp;D:\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\imgui_impl_glfw_gl3.obj

@@ -1,0 +1,10 @@
+^D:\PARALLEL-DEFERED-RENDERER\BUILD_DEBUG\CMAKEFILES\C11927CAEECB3335D8E273218E9E5444\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Parallel-Defered-Renderer/build_Debug/Parallel-Deferred-Renderer.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
