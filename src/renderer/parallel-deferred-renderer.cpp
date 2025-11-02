@@ -1,5 +1,3 @@
-#include <omp.h>
-
 #include "shader.h"
 #include "camera.h"
 #include "model.h"
@@ -391,11 +389,10 @@ int main(int argc, char* argv[])
         //--------------
         imGuiSetup();
 
-#pragma omp parallel sections{
+
         //------------------------
         // Geometry Pass rendering
         //------------------------
-#pragma omp section{
         glQueryCounter(queryIDGeometry[0], GL_TIMESTAMP);
         glBindFramebuffer(GL_FRAMEBUFFER, gBuffer);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
@@ -450,7 +447,6 @@ int main(int argc, char* argv[])
 
         prevProjViewModel = projViewModel;
 
-        }
         //---------------
         // sao rendering
         //---------------
@@ -635,7 +631,7 @@ int main(int argc, char* argv[])
         ImGui::Render();
         glQueryCounter(queryIDGUI[1], GL_TIMESTAMP);
 
-        }
+
         //--------------
         // GPU profiling
         //--------------
