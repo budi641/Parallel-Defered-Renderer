@@ -520,29 +520,20 @@ int main(int argc, char* argv[])
 
         double startLights = omp_get_wtime();
 
-        #pragma omp parallel sections
-        {
-            #pragma omp section
-            {
-                #pragma omp parallel for schedule(static)
+        
                 for (int i = 0; i < (int)Light::lightPointList.size(); ++i) {
                     Light& L = Light::lightPointList[i];
                     L.setLightPosition(L.getLightPosition());
                     L.setLightColor(L.getLightColor());
                     L.setLightRadius(L.getLightRadius());
                 }
-            }
-
-            #pragma omp section
-            {
-                #pragma omp parallel for schedule(static)
                 for (int i = 0; i < (int)Light::lightDirectionalList.size(); ++i) {
                     Light& L = Light::lightDirectionalList[i];
                     L.setLightDirection(L.getLightDirection());
                     L.setLightColor(L.getLightColor());
                 }
-            }
-        }
+            
+
 
         double endLights = omp_get_wtime();
 
@@ -551,17 +542,12 @@ int main(int argc, char* argv[])
         glm::mat4 inverseView;
         glm::mat4 inverseProj;
 
-         #pragma omp parallel sections
-        {
-            #pragma omp section
-            {
+
                 inverseView = glm::transpose(view);
-            }
-            #pragma omp section
-            {
+           
                 inverseProj = glm::inverse(projection);
-            }
-        }
+          
+       
 
         double endMatrices = omp_get_wtime();
 
