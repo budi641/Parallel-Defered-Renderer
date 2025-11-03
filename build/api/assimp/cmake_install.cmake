@@ -1,4 +1,4 @@
-# Install script for directory: /home/joe/Parallel-Defered-Renderer/api/assimp
+# Install script for directory: /home/roovi/Parallel-Defered-Renderer/api/assimp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,19 +44,18 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "libassimp3.2.0-dev" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/assimp-3.2" TYPE FILE FILES
-    "/home/joe/Parallel-Defered-Renderer/build/api/assimp/assimp-config.cmake"
-    "/home/joe/Parallel-Defered-Renderer/build/api/assimp/assimp-config-version.cmake"
+    "/home/roovi/Parallel-Defered-Renderer/build/api/assimp/assimp-config.cmake"
+    "/home/roovi/Parallel-Defered-Renderer/build/api/assimp/assimp-config-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "libassimp3.2.0-dev" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/joe/Parallel-Defered-Renderer/build/api/assimp/assimp.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/roovi/Parallel-Defered-Renderer/build/api/assimp/assimp.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/joe/Parallel-Defered-Renderer/build/api/assimp/contrib/zlib/cmake_install.cmake")
-  include("/home/joe/Parallel-Defered-Renderer/build/api/assimp/code/cmake_install.cmake")
+  include("/home/roovi/Parallel-Defered-Renderer/build/api/assimp/code/cmake_install.cmake")
 
 endif()
 

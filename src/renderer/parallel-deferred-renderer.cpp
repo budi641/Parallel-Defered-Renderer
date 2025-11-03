@@ -177,7 +177,8 @@ Shape envCubeRender;
 
 int main(int argc, char* argv[])
 {
-    std::cout << "Running with " << omp_get_max_threads() << " threads\n";
+    std::cout << "Sequential approach\n ";
+    double startTotal = omp_get_wtime();
     glfwInit();
 
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
@@ -748,7 +749,9 @@ int main(int argc, char* argv[])
     //---------
     ImGui_ImplGlfwGL3_Shutdown();
     glfwTerminate();
-
+    double endTotal = omp_get_wtime();
+    double T = endTotal - startTotal;
+    std::cout << " - Total time: " << T * 1000.0 << " ms" << std::endl;
     return 0;
 }
 

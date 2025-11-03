@@ -7,5 +7,5 @@ Name: Parallel-Deferred-Renderer
 Description: Import various well-known 3D model formats in an uniform manner.
 Version: 3.2.0
 Libs: -L${libdir} -lassimp
-Libs.private: -lstdc++ 
+Libs.private: -lstdc++ -lz
 Cflags: -I${includedir}

@@ -188,7 +188,7 @@ unsigned int queryIDGUI[2];
 int main(int /*argc*/, char* /*argv*/[])
 {
     std::cout << "Running with " << omp_get_max_threads() << " OpenMP threads\n";
-    
+    double startTotal = omp_get_wtime();
     glfwInit();
 
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
@@ -451,6 +451,28 @@ int main(int /*argc*/, char* /*argv*/[])
     ImGui_ImplGlfwGL3_Shutdown();
     glfwTerminate();
 
+    double endTotal = omp_get_wtime();
+    double T_P = endTotal - startTotal;
+
+    double T_S = 2638.7 / 1000;
+    int numThreads = omp_get_max_threads();
+
+    if (numThreads == 1) {
+        T_S = T_P;
+        std::cout << "[Baseline captured] T_S = " << T_S * 1000.0 << " ms" << std::endl;
+    }
+
+    double speedup = (T_S / T_P);
+    double efficiency = (speedup / numThreads);
+
+    std::cout << "Full Timings:" << std::endl;
+
+    std::cout << " - Total CPU time: " << T_P * 1000.0 << " ms" << std::endl;
+    std::cout << "Performance Stats (" << numThreads << " threads):" << std::endl;
+    std::cout << " - Speedup (S):    " << speedup << std::endl;
+    std::cout << " - Efficiency (E): " << efficiency * 100.0 << " %" << std::endl;
+    std::cout << "============================" << std::endl;
+
     return 0;
 }
 
@@ -513,7 +535,7 @@ void renderGeometryPass() {
 }
 
 void renderLightingPass() {
-    double startTotal = omp_get_wtime();
+    
     
     glQueryCounter(queryIDLighting[0], GL_TIMESTAMP);
     
@@ -531,7 +553,7 @@ void renderLightingPass() {
     glm::mat4 inverseProj;
     
     // ✅ FIXED: Proper parallelization without nesting
-    double startParallel = omp_get_wtime();
+    //double startParallel = omp_get_wtime();
     
     #pragma omp parallel
     {
@@ -570,7 +592,7 @@ void renderLightingPass() {
         }
     }
     
-    double endParallel = omp_get_wtime();
+    
     
     // Setup lighting shader (MUST be sequential)
     lightingBRDFShader.useShader();
@@ -613,12 +635,27 @@ void renderLightingPass() {
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
     glQueryCounter(queryIDLighting[1], GL_TIMESTAMP);
     
-    double endTotal = omp_get_wtime();
-    
+    //double endTotal = omp_get_wtime();
+    /*double T_P = endTotal - startTotal;
+
+    double T_S = 0.0876242/1000;
+    int numThreads = omp_get_max_threads();
+
+    if (numThreads == 1) {
+        T_S = T_P; 
+        std::cout << "[Baseline captured] T_S = " << T_S * 1000.0 << " ms" << std::endl;
+    }
+
+    double speedup = (T_S / T_P);
+    double efficiency = (speedup / numThreads);
+
     std::cout << "Lighting Pass Timings:" << std::endl;
     std::cout << " - Parallel work:  " << (endParallel - startParallel) * 1000.0 << " ms" << std::endl;
-    std::cout << " - Total CPU time: " << (endTotal - startTotal) * 1000.0 << " ms" << std::endl;
-    std::cout << "============================" << std::endl;
+    std::cout << " - Total CPU time: " << T_P * 1000.0 << " ms" << std::endl;
+    std::cout << "Performance Stats (" << numThreads << " threads):" << std::endl;
+    std::cout << " - Speedup (S):    " << speedup << std::endl;
+    std::cout << " - Efficiency (E): " << efficiency * 100.0 << " %" << std::endl;
+    std::cout << "============================" << std::endl;*/
 }
 
 void renderSAOPass() {
@@ -703,7 +740,8 @@ void renderPostprocessPass() {
     glQueryCounter(queryIDPostprocess[1], GL_TIMESTAMP);
 }
 
-void renderForwardPass() {
+void renderForwardPass() 
+{
     double startTotal = omp_get_wtime();
 
     glQueryCounter(queryIDForward[0], GL_TIMESTAMP);
@@ -757,15 +795,16 @@ void renderForwardPass() {
     }
 
     glQueryCounter(queryIDForward[1], GL_TIMESTAMP);
-    double endTotal = omp_get_wtime();
+    //double endTotal = omp_get_wtime();
 
-    if (pointMode) {
+   /* if (pointMode) {
         std::cout << "Forward Pass Timings:" << std::endl;
         std::cout << " - Light prep:  " << (endLightPrep - startLightPrep) * 1000.0 << " ms" << std::endl;
         std::cout << " - Draw calls:  " << (endDraw - startDraw) * 1000.0 << " ms" << std::endl;
         std::cout << " - Total CPU:   " << (endTotal - startTotal) * 1000.0 << " ms" << std::endl;
         std::cout << "============================" << std::endl;
-    }
+    }*/
+
 }
 
 // [Keep all the remaining functions: cameraMove, imGuiSetup, gBufferSetup, saoSetup, postprocessSetup, iblSetup, and callbacks exactly as they are in your current code]

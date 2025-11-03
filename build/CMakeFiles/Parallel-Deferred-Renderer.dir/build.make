@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joe/Parallel-Defered-Renderer
+CMAKE_SOURCE_DIR = /home/roovi/Parallel-Defered-Renderer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joe/Parallel-Defered-Renderer/build
+CMAKE_BINARY_DIR = /home/roovi/Parallel-Defered-Renderer/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Parallel-Deferred-Renderer.dir/depend.make
@@ -70,200 +70,200 @@ include CMakeFiles/Parallel-Deferred-Renderer.dir/progress.make
 include CMakeFiles/Parallel-Deferred-Renderer.dir/flags.make
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/flags.make
-CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.o: /home/joe/Parallel-Defered-Renderer/src/camera/camera.cpp
+CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.o: /home/roovi/Parallel-Defered-Renderer/src/camera/camera.cpp
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joe/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.o -c /home/joe/Parallel-Defered-Renderer/src/camera/camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/roovi/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.o -c /home/roovi/Parallel-Defered-Renderer/src/camera/camera.cpp
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joe/Parallel-Defered-Renderer/src/camera/camera.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roovi/Parallel-Defered-Renderer/src/camera/camera.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.i
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joe/Parallel-Defered-Renderer/src/camera/camera.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roovi/Parallel-Defered-Renderer/src/camera/camera.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/camera/camera.cpp.s
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/flags.make
-CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.o: /home/joe/Parallel-Defered-Renderer/src/lighting/light.cpp
+CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.o: /home/roovi/Parallel-Defered-Renderer/src/lighting/light.cpp
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joe/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.o -c /home/joe/Parallel-Defered-Renderer/src/lighting/light.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/roovi/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.o -c /home/roovi/Parallel-Defered-Renderer/src/lighting/light.cpp
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joe/Parallel-Defered-Renderer/src/lighting/light.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roovi/Parallel-Defered-Renderer/src/lighting/light.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.i
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joe/Parallel-Defered-Renderer/src/lighting/light.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roovi/Parallel-Defered-Renderer/src/lighting/light.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/lighting/light.cpp.s
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/flags.make
-CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.o: /home/joe/Parallel-Defered-Renderer/src/mesh/mesh.cpp
+CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.o: /home/roovi/Parallel-Defered-Renderer/src/mesh/mesh.cpp
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joe/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.o -c /home/joe/Parallel-Defered-Renderer/src/mesh/mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/roovi/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.o -c /home/roovi/Parallel-Defered-Renderer/src/mesh/mesh.cpp
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joe/Parallel-Defered-Renderer/src/mesh/mesh.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roovi/Parallel-Defered-Renderer/src/mesh/mesh.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.i
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joe/Parallel-Defered-Renderer/src/mesh/mesh.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roovi/Parallel-Defered-Renderer/src/mesh/mesh.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/mesh.cpp.s
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/flags.make
-CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.o: /home/joe/Parallel-Defered-Renderer/src/mesh/model.cpp
+CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.o: /home/roovi/Parallel-Defered-Renderer/src/mesh/model.cpp
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joe/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.o -c /home/joe/Parallel-Defered-Renderer/src/mesh/model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/roovi/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.o -c /home/roovi/Parallel-Defered-Renderer/src/mesh/model.cpp
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joe/Parallel-Defered-Renderer/src/mesh/model.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roovi/Parallel-Defered-Renderer/src/mesh/model.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.i
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joe/Parallel-Defered-Renderer/src/mesh/model.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roovi/Parallel-Defered-Renderer/src/mesh/model.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.s
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/flags.make
-CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.o: /home/joe/Parallel-Defered-Renderer/src/renderer/parallel-deferred-renderer_omp.cpp
+CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.o: /home/roovi/Parallel-Defered-Renderer/src/renderer/parallel-deferred-renderer_omp.cpp
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joe/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.o -c /home/joe/Parallel-Defered-Renderer/src/renderer/parallel-deferred-renderer_omp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/roovi/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.o -c /home/roovi/Parallel-Defered-Renderer/src/renderer/parallel-deferred-renderer_omp.cpp
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joe/Parallel-Defered-Renderer/src/renderer/parallel-deferred-renderer_omp.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roovi/Parallel-Defered-Renderer/src/renderer/parallel-deferred-renderer_omp.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.i
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joe/Parallel-Defered-Renderer/src/renderer/parallel-deferred-renderer_omp.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roovi/Parallel-Defered-Renderer/src/renderer/parallel-deferred-renderer_omp.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.s
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/flags.make
-CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.o: /home/joe/Parallel-Defered-Renderer/src/resources/material.cpp
+CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.o: /home/roovi/Parallel-Defered-Renderer/src/resources/material.cpp
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joe/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.o -c /home/joe/Parallel-Defered-Renderer/src/resources/material.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/roovi/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.o -c /home/roovi/Parallel-Defered-Renderer/src/resources/material.cpp
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joe/Parallel-Defered-Renderer/src/resources/material.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roovi/Parallel-Defered-Renderer/src/resources/material.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.i
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joe/Parallel-Defered-Renderer/src/resources/material.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roovi/Parallel-Defered-Renderer/src/resources/material.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/material.cpp.s
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/flags.make
-CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.o: /home/joe/Parallel-Defered-Renderer/src/resources/shader.cpp
+CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.o: /home/roovi/Parallel-Defered-Renderer/src/resources/shader.cpp
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joe/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.o -c /home/joe/Parallel-Defered-Renderer/src/resources/shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/roovi/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.o -c /home/roovi/Parallel-Defered-Renderer/src/resources/shader.cpp
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joe/Parallel-Defered-Renderer/src/resources/shader.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roovi/Parallel-Defered-Renderer/src/resources/shader.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.i
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joe/Parallel-Defered-Renderer/src/resources/shader.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roovi/Parallel-Defered-Renderer/src/resources/shader.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shader.cpp.s
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/flags.make
-CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.o: /home/joe/Parallel-Defered-Renderer/src/resources/shape.cpp
+CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.o: /home/roovi/Parallel-Defered-Renderer/src/resources/shape.cpp
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joe/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.o -c /home/joe/Parallel-Defered-Renderer/src/resources/shape.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/roovi/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.o -c /home/roovi/Parallel-Defered-Renderer/src/resources/shape.cpp
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joe/Parallel-Defered-Renderer/src/resources/shape.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roovi/Parallel-Defered-Renderer/src/resources/shape.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.i
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joe/Parallel-Defered-Renderer/src/resources/shape.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roovi/Parallel-Defered-Renderer/src/resources/shape.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/shape.cpp.s
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/flags.make
-CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.o: /home/joe/Parallel-Defered-Renderer/src/resources/skybox.cpp
+CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.o: /home/roovi/Parallel-Defered-Renderer/src/resources/skybox.cpp
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joe/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.o -c /home/joe/Parallel-Defered-Renderer/src/resources/skybox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/roovi/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.o -c /home/roovi/Parallel-Defered-Renderer/src/resources/skybox.cpp
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joe/Parallel-Defered-Renderer/src/resources/skybox.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roovi/Parallel-Defered-Renderer/src/resources/skybox.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.i
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joe/Parallel-Defered-Renderer/src/resources/skybox.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roovi/Parallel-Defered-Renderer/src/resources/skybox.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/skybox.cpp.s
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/flags.make
-CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.o: /home/joe/Parallel-Defered-Renderer/src/resources/texture.cpp
+CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.o: /home/roovi/Parallel-Defered-Renderer/src/resources/texture.cpp
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joe/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.o -c /home/joe/Parallel-Defered-Renderer/src/resources/texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/roovi/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.o -c /home/roovi/Parallel-Defered-Renderer/src/resources/texture.cpp
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joe/Parallel-Defered-Renderer/src/resources/texture.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roovi/Parallel-Defered-Renderer/src/resources/texture.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.i
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joe/Parallel-Defered-Renderer/src/resources/texture.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roovi/Parallel-Defered-Renderer/src/resources/texture.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/src/resources/texture.cpp.s
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.o: CMakeFiles/Parallel-Deferred-Renderer.dir/flags.make
-CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.o: /home/joe/Parallel-Defered-Renderer/api/glad/src/glad.c
+CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.o: /home/roovi/Parallel-Defered-Renderer/api/glad/src/glad.c
 CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.o: CMakeFiles/Parallel-Deferred-Renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joe/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.o -c /home/joe/Parallel-Defered-Renderer/api/glad/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/roovi/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.o -c /home/roovi/Parallel-Defered-Renderer/api/glad/src/glad.c
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/joe/Parallel-Defered-Renderer/api/glad/src/glad.c > CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/roovi/Parallel-Defered-Renderer/api/glad/src/glad.c > CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.i
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/joe/Parallel-Defered-Renderer/api/glad/src/glad.c -o CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/roovi/Parallel-Defered-Renderer/api/glad/src/glad.c -o CMakeFiles/Parallel-Deferred-Renderer.dir/api/glad/src/glad.c.s
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/flags.make
-CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.o: /home/joe/Parallel-Defered-Renderer/api/imgui/imgui.cpp
+CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.o: /home/roovi/Parallel-Defered-Renderer/api/imgui/imgui.cpp
 CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joe/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.o -c /home/joe/Parallel-Defered-Renderer/api/imgui/imgui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/roovi/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.o -c /home/roovi/Parallel-Defered-Renderer/api/imgui/imgui.cpp
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joe/Parallel-Defered-Renderer/api/imgui/imgui.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roovi/Parallel-Defered-Renderer/api/imgui/imgui.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.i
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joe/Parallel-Defered-Renderer/api/imgui/imgui.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roovi/Parallel-Defered-Renderer/api/imgui/imgui.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui.cpp.s
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/flags.make
-CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.o: /home/joe/Parallel-Defered-Renderer/api/imgui/imgui_draw.cpp
+CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.o: /home/roovi/Parallel-Defered-Renderer/api/imgui/imgui_draw.cpp
 CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joe/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.o -c /home/joe/Parallel-Defered-Renderer/api/imgui/imgui_draw.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/roovi/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.o -c /home/roovi/Parallel-Defered-Renderer/api/imgui/imgui_draw.cpp
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joe/Parallel-Defered-Renderer/api/imgui/imgui_draw.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roovi/Parallel-Defered-Renderer/api/imgui/imgui_draw.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.i
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joe/Parallel-Defered-Renderer/api/imgui/imgui_draw.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roovi/Parallel-Defered-Renderer/api/imgui/imgui_draw.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_draw.cpp.s
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/flags.make
-CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.o: /home/joe/Parallel-Defered-Renderer/api/imgui/imgui_impl_glfw_gl3.cpp
+CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.o: /home/roovi/Parallel-Defered-Renderer/api/imgui/imgui_impl_glfw_gl3.cpp
 CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.o: CMakeFiles/Parallel-Deferred-Renderer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/joe/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.o -c /home/joe/Parallel-Defered-Renderer/api/imgui/imgui_impl_glfw_gl3.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/roovi/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.o -MF CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.o.d -o CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.o -c /home/roovi/Parallel-Defered-Renderer/api/imgui/imgui_impl_glfw_gl3.cpp
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joe/Parallel-Defered-Renderer/api/imgui/imgui_impl_glfw_gl3.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roovi/Parallel-Defered-Renderer/api/imgui/imgui_impl_glfw_gl3.cpp > CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.i
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joe/Parallel-Defered-Renderer/api/imgui/imgui_impl_glfw_gl3.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roovi/Parallel-Defered-Renderer/api/imgui/imgui_impl_glfw_gl3.cpp -o CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/imgui_impl_glfw_gl3.cpp.s
 
 # Object files for target Parallel-Deferred-Renderer
 Parallel__Deferred__Renderer_OBJECTS = \
@@ -302,17 +302,18 @@ Parallel-Deferred-Renderer: CMakeFiles/Parallel-Deferred-Renderer.dir/api/imgui/
 Parallel-Deferred-Renderer: CMakeFiles/Parallel-Deferred-Renderer.dir/build.make
 Parallel-Deferred-Renderer: api/assimp/code/libassimp.a
 Parallel-Deferred-Renderer: api/glfw/src/libglfw3.a
-Parallel-Deferred-Renderer: api/assimp/contrib/zlib/libzlibstatic.a
+Parallel-Deferred-Renderer: /usr/lib/x86_64-linux-gnu/libz.so
 Parallel-Deferred-Renderer: /usr/lib/x86_64-linux-gnu/librt.a
 Parallel-Deferred-Renderer: /usr/lib/x86_64-linux-gnu/libm.so
 Parallel-Deferred-Renderer: /usr/lib/x86_64-linux-gnu/libX11.so
 Parallel-Deferred-Renderer: /usr/lib/x86_64-linux-gnu/libXrandr.so
 Parallel-Deferred-Renderer: /usr/lib/x86_64-linux-gnu/libXinerama.so
+Parallel-Deferred-Renderer: /usr/lib/x86_64-linux-gnu/libXxf86vm.so
 Parallel-Deferred-Renderer: /usr/lib/x86_64-linux-gnu/libXcursor.so
 Parallel-Deferred-Renderer: /usr/lib/gcc/x86_64-linux-gnu/13/libgomp.so
 Parallel-Deferred-Renderer: /usr/lib/x86_64-linux-gnu/libpthread.a
 Parallel-Deferred-Renderer: CMakeFiles/Parallel-Deferred-Renderer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/joe/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable Parallel-Deferred-Renderer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/roovi/Parallel-Defered-Renderer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable Parallel-Deferred-Renderer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Parallel-Deferred-Renderer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -324,6 +325,6 @@ CMakeFiles/Parallel-Deferred-Renderer.dir/clean:
 .PHONY : CMakeFiles/Parallel-Deferred-Renderer.dir/clean
 
 CMakeFiles/Parallel-Deferred-Renderer.dir/depend:
-	cd /home/joe/Parallel-Defered-Renderer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joe/Parallel-Defered-Renderer /home/joe/Parallel-Defered-Renderer /home/joe/Parallel-Defered-Renderer/build /home/joe/Parallel-Defered-Renderer/build /home/joe/Parallel-Defered-Renderer/build/CMakeFiles/Parallel-Deferred-Renderer.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/roovi/Parallel-Defered-Renderer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roovi/Parallel-Defered-Renderer /home/roovi/Parallel-Defered-Renderer /home/roovi/Parallel-Defered-Renderer/build /home/roovi/Parallel-Defered-Renderer/build /home/roovi/Parallel-Defered-Renderer/build/CMakeFiles/Parallel-Deferred-Renderer.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Parallel-Deferred-Renderer.dir/depend
 

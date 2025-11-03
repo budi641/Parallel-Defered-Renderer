@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/home/joe/Parallel-Defered-Renderer/api/glfw/include -I/home/joe/Parallel-Defered-Renderer/api/glfw/src -I/home/joe/Parallel-Defered-Renderer/build/api/glfw/src
+C_INCLUDES = -I/home/roovi/Parallel-Defered-Renderer/api/glfw/include -I/home/roovi/Parallel-Defered-Renderer/api/glfw/src -I/home/roovi/Parallel-Defered-Renderer/build/api/glfw/src
 
 C_FLAGS = -fPIC -Wall
 

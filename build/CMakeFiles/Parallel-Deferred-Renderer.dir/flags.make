@@ -3,15 +3,15 @@
 
 # compile C with /usr/bin/cc
 # compile CXX with /usr/bin/c++
-C_DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR=\"/home/joe/Parallel-Defered-Renderer\"
+C_DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR=\"/home/roovi/Parallel-Defered-Renderer\"
 
-C_INCLUDES = -I/home/joe/Parallel-Defered-Renderer/src/camera -I/home/joe/Parallel-Defered-Renderer/src/lighting -I/home/joe/Parallel-Defered-Renderer/src/mesh -I/home/joe/Parallel-Defered-Renderer/src/renderer -I/home/joe/Parallel-Defered-Renderer/src/resources -I/home/joe/Parallel-Defered-Renderer/api/assimp/include -I/home/joe/Parallel-Defered-Renderer/api/glad/include -I/home/joe/Parallel-Defered-Renderer/api/glfw/include -I/home/joe/Parallel-Defered-Renderer/api/glm -I/home/joe/Parallel-Defered-Renderer/api/stb -I/home/joe/Parallel-Defered-Renderer/api/imgui
+C_INCLUDES = -I/home/roovi/Parallel-Defered-Renderer/src/camera -I/home/roovi/Parallel-Defered-Renderer/src/lighting -I/home/roovi/Parallel-Defered-Renderer/src/mesh -I/home/roovi/Parallel-Defered-Renderer/src/renderer -I/home/roovi/Parallel-Defered-Renderer/src/resources -I/home/roovi/Parallel-Defered-Renderer/api/assimp/include -I/home/roovi/Parallel-Defered-Renderer/api/glad/include -I/home/roovi/Parallel-Defered-Renderer/api/glfw/include -I/home/roovi/Parallel-Defered-Renderer/api/glm -I/home/roovi/Parallel-Defered-Renderer/api/stb -I/home/roovi/Parallel-Defered-Renderer/api/imgui
 
 C_FLAGS = 
 
-CXX_DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR=\"/home/joe/Parallel-Defered-Renderer\"
+CXX_DEFINES = -DGLFW_INCLUDE_NONE -DPROJECT_SOURCE_DIR=\"/home/roovi/Parallel-Defered-Renderer\"
 
-CXX_INCLUDES = -I/home/joe/Parallel-Defered-Renderer/src/camera -I/home/joe/Parallel-Defered-Renderer/src/lighting -I/home/joe/Parallel-Defered-Renderer/src/mesh -I/home/joe/Parallel-Defered-Renderer/src/renderer -I/home/joe/Parallel-Defered-Renderer/src/resources -I/home/joe/Parallel-Defered-Renderer/api/assimp/include -I/home/joe/Parallel-Defered-Renderer/api/glad/include -I/home/joe/Parallel-Defered-Renderer/api/glfw/include -I/home/joe/Parallel-Defered-Renderer/api/glm -I/home/joe/Parallel-Defered-Renderer/api/stb -I/home/joe/Parallel-Defered-Renderer/api/imgui
+CXX_INCLUDES = -I/home/roovi/Parallel-Defered-Renderer/src/camera -I/home/roovi/Parallel-Defered-Renderer/src/lighting -I/home/roovi/Parallel-Defered-Renderer/src/mesh -I/home/roovi/Parallel-Defered-Renderer/src/renderer -I/home/roovi/Parallel-Defered-Renderer/src/resources -I/home/roovi/Parallel-Defered-Renderer/api/assimp/include -I/home/roovi/Parallel-Defered-Renderer/api/glad/include -I/home/roovi/Parallel-Defered-Renderer/api/glfw/include -I/home/roovi/Parallel-Defered-Renderer/api/glm -I/home/roovi/Parallel-Defered-Renderer/api/stb -I/home/roovi/Parallel-Defered-Renderer/api/imgui
 
 CXX_FLAGS =  -fopenmp -Wall -Wextra -Wpedantic -std=gnu++11 -fopenmp
 

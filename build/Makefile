@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joe/Parallel-Defered-Renderer
+CMAKE_SOURCE_DIR = /home/roovi/Parallel-Defered-Renderer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joe/Parallel-Defered-Renderer/build
+CMAKE_BINARY_DIR = /home/roovi/Parallel-Defered-Renderer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joe/Parallel-Defered-Renderer/build/CMakeFiles /home/joe/Parallel-Defered-Renderer/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roovi/Parallel-Defered-Renderer/build/CMakeFiles /home/roovi/Parallel-Defered-Renderer/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joe/Parallel-Defered-Renderer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roovi/Parallel-Defered-Renderer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -199,19 +199,6 @@ glfw: cmake_check_build_system
 glfw/fast:
 	$(MAKE) $(MAKESILENT) -f api/glfw/src/CMakeFiles/glfw.dir/build.make api/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
-
-#=============================================================================
-# Target rules for targets named zlibstatic
-
-# Build rule for target.
-zlibstatic: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zlibstatic
-.PHONY : zlibstatic
-
-# fast build rule for target.
-zlibstatic/fast:
-	$(MAKE) $(MAKESILENT) -f api/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/build.make api/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/build
-.PHONY : zlibstatic/fast
 
 #=============================================================================
 # Target rules for targets named assimp
@@ -578,7 +565,6 @@ help:
 	@echo "... Parallel-Deferred-Renderer"
 	@echo "... assimp"
 	@echo "... glfw"
-	@echo "... zlibstatic"
 	@echo "... api/glad/src/glad.o"
 	@echo "... api/glad/src/glad.i"
 	@echo "... api/glad/src/glad.s"
