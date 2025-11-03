@@ -69,7 +69,7 @@ file(GLOB PROJECT_SOURCES
     src/camera/*.cpp
     src/lighting/*.cpp
     src/mesh/*.cpp
-    src/renderer/*.cpp
+    src/renderer/parallel-deferred-renderer_omp.cpp
     src/resources/*.cpp
 )
 

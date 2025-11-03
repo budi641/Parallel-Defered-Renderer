@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roovi/Parallel-Defered-Renderer
+CMAKE_SOURCE_DIR = /home/joe/Parallel-Defered-Renderer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roovi/Parallel-Defered-Renderer/build
+CMAKE_BINARY_DIR = /home/joe/Parallel-Defered-Renderer/build
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include api/glfw/CMakeFiles/uninstall.dir/compiler_depend.make
 include api/glfw/CMakeFiles/uninstall.dir/progress.make
 
 api/glfw/CMakeFiles/uninstall:
-	cd /home/roovi/Parallel-Defered-Renderer/build/api/glfw && /usr/bin/cmake -P /home/roovi/Parallel-Defered-Renderer/build/api/glfw/cmake_uninstall.cmake
+	cd /home/joe/Parallel-Defered-Renderer/build/api/glfw && /usr/bin/cmake -P /home/joe/Parallel-Defered-Renderer/build/api/glfw/cmake_uninstall.cmake
 
 uninstall: api/glfw/CMakeFiles/uninstall
 uninstall: api/glfw/CMakeFiles/uninstall.dir/build.make
@@ -78,10 +78,10 @@ api/glfw/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : api/glfw/CMakeFiles/uninstall.dir/build
 
 api/glfw/CMakeFiles/uninstall.dir/clean:
-	cd /home/roovi/Parallel-Defered-Renderer/build/api/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/joe/Parallel-Defered-Renderer/build/api/glfw && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : api/glfw/CMakeFiles/uninstall.dir/clean
 
 api/glfw/CMakeFiles/uninstall.dir/depend:
-	cd /home/roovi/Parallel-Defered-Renderer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roovi/Parallel-Defered-Renderer /home/roovi/Parallel-Defered-Renderer/api/glfw /home/roovi/Parallel-Defered-Renderer/build /home/roovi/Parallel-Defered-Renderer/build/api/glfw /home/roovi/Parallel-Defered-Renderer/build/api/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/joe/Parallel-Defered-Renderer/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joe/Parallel-Defered-Renderer /home/joe/Parallel-Defered-Renderer/api/glfw /home/joe/Parallel-Defered-Renderer/build /home/joe/Parallel-Defered-Renderer/build/api/glfw /home/joe/Parallel-Defered-Renderer/build/api/glfw/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : api/glfw/CMakeFiles/uninstall.dir/depend
 

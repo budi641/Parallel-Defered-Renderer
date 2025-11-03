@@ -3,15 +3,15 @@
 
 # compile C with /usr/bin/cc
 # compile CXX with /usr/bin/c++
-C_DEFINES = -DASSIMP_BUILD_DLL_EXPORT -DASSIMP_BUILD_NO_C4D_IMPORTER -DASSIMP_BUILD_NO_OWN_ZLIB -DOPENDDLPARSER_BUILD -DOPENDDL_NO_USE_CPP11
+C_DEFINES = -DASSIMP_BUILD_DLL_EXPORT -DASSIMP_BUILD_NO_C4D_IMPORTER -DOPENDDLPARSER_BUILD -DOPENDDL_NO_USE_CPP11
 
-C_INCLUDES = -I/home/roovi/Parallel-Defered-Renderer/build/api/assimp -I/home/roovi/Parallel-Defered-Renderer/api/assimp/include -I/home/roovi/Parallel-Defered-Renderer/api/assimp/code/../contrib/rapidjson/include -I/home/roovi/Parallel-Defered-Renderer/api/assimp/code/../contrib/openddlparser/include -I/home/roovi/Parallel-Defered-Renderer/api/assimp/code/../contrib/unzip
+C_INCLUDES = -I/home/joe/Parallel-Defered-Renderer/build/api/assimp -I/home/joe/Parallel-Defered-Renderer/api/assimp/include -I/home/joe/Parallel-Defered-Renderer/api/assimp/contrib/zlib -I/home/joe/Parallel-Defered-Renderer/build/api/assimp/contrib/zlib -I/home/joe/Parallel-Defered-Renderer/api/assimp/code/../contrib/rapidjson/include -I/home/joe/Parallel-Defered-Renderer/api/assimp/code/../contrib/openddlparser/include -I/home/joe/Parallel-Defered-Renderer/api/assimp/code/../contrib/unzip
 
 C_FLAGS = 
 
-CXX_DEFINES = -DASSIMP_BUILD_DLL_EXPORT -DASSIMP_BUILD_NO_C4D_IMPORTER -DASSIMP_BUILD_NO_OWN_ZLIB -DOPENDDLPARSER_BUILD -DOPENDDL_NO_USE_CPP11
+CXX_DEFINES = -DASSIMP_BUILD_DLL_EXPORT -DASSIMP_BUILD_NO_C4D_IMPORTER -DOPENDDLPARSER_BUILD -DOPENDDL_NO_USE_CPP11
 
-CXX_INCLUDES = -I/home/roovi/Parallel-Defered-Renderer/build/api/assimp -I/home/roovi/Parallel-Defered-Renderer/api/assimp/include -I/home/roovi/Parallel-Defered-Renderer/api/assimp/code/../contrib/rapidjson/include -I/home/roovi/Parallel-Defered-Renderer/api/assimp/code/../contrib/openddlparser/include -I/home/roovi/Parallel-Defered-Renderer/api/assimp/code/../contrib/unzip
+CXX_INCLUDES = -I/home/joe/Parallel-Defered-Renderer/build/api/assimp -I/home/joe/Parallel-Defered-Renderer/api/assimp/include -I/home/joe/Parallel-Defered-Renderer/api/assimp/contrib/zlib -I/home/joe/Parallel-Defered-Renderer/build/api/assimp/contrib/zlib -I/home/joe/Parallel-Defered-Renderer/api/assimp/code/../contrib/rapidjson/include -I/home/joe/Parallel-Defered-Renderer/api/assimp/code/../contrib/openddlparser/include -I/home/joe/Parallel-Defered-Renderer/api/assimp/code/../contrib/unzip
 
 CXX_FLAGS =  -fopenmp -fvisibility=hidden -Wall -std=c++0x -std=gnu++11
 

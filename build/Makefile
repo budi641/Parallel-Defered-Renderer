@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roovi/Parallel-Defered-Renderer
+CMAKE_SOURCE_DIR = /home/joe/Parallel-Defered-Renderer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roovi/Parallel-Defered-Renderer/build
+CMAKE_BINARY_DIR = /home/joe/Parallel-Defered-Renderer/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roovi/Parallel-Defered-Renderer/build/CMakeFiles /home/roovi/Parallel-Defered-Renderer/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joe/Parallel-Defered-Renderer/build/CMakeFiles /home/joe/Parallel-Defered-Renderer/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roovi/Parallel-Defered-Renderer/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joe/Parallel-Defered-Renderer/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -199,6 +199,19 @@ glfw: cmake_check_build_system
 glfw/fast:
 	$(MAKE) $(MAKESILENT) -f api/glfw/src/CMakeFiles/glfw.dir/build.make api/glfw/src/CMakeFiles/glfw.dir/build
 .PHONY : glfw/fast
+
+#=============================================================================
+# Target rules for targets named zlibstatic
+
+# Build rule for target.
+zlibstatic: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 zlibstatic
+.PHONY : zlibstatic
+
+# fast build rule for target.
+zlibstatic/fast:
+	$(MAKE) $(MAKESILENT) -f api/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/build.make api/assimp/contrib/zlib/CMakeFiles/zlibstatic.dir/build
+.PHONY : zlibstatic/fast
 
 #=============================================================================
 # Target rules for targets named assimp
@@ -405,29 +418,29 @@ src/mesh/model.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parallel-Deferred-Renderer.dir/build.make CMakeFiles/Parallel-Deferred-Renderer.dir/src/mesh/model.cpp.s
 .PHONY : src/mesh/model.cpp.s
 
-src/renderer/parallel-deferred-renderer.o: src/renderer/parallel-deferred-renderer.cpp.o
-.PHONY : src/renderer/parallel-deferred-renderer.o
+src/renderer/parallel-deferred-renderer_omp.o: src/renderer/parallel-deferred-renderer_omp.cpp.o
+.PHONY : src/renderer/parallel-deferred-renderer_omp.o
 
 # target to build an object file
-src/renderer/parallel-deferred-renderer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parallel-Deferred-Renderer.dir/build.make CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer.cpp.o
-.PHONY : src/renderer/parallel-deferred-renderer.cpp.o
+src/renderer/parallel-deferred-renderer_omp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parallel-Deferred-Renderer.dir/build.make CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.o
+.PHONY : src/renderer/parallel-deferred-renderer_omp.cpp.o
 
-src/renderer/parallel-deferred-renderer.i: src/renderer/parallel-deferred-renderer.cpp.i
-.PHONY : src/renderer/parallel-deferred-renderer.i
+src/renderer/parallel-deferred-renderer_omp.i: src/renderer/parallel-deferred-renderer_omp.cpp.i
+.PHONY : src/renderer/parallel-deferred-renderer_omp.i
 
 # target to preprocess a source file
-src/renderer/parallel-deferred-renderer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parallel-Deferred-Renderer.dir/build.make CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer.cpp.i
-.PHONY : src/renderer/parallel-deferred-renderer.cpp.i
+src/renderer/parallel-deferred-renderer_omp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parallel-Deferred-Renderer.dir/build.make CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.i
+.PHONY : src/renderer/parallel-deferred-renderer_omp.cpp.i
 
-src/renderer/parallel-deferred-renderer.s: src/renderer/parallel-deferred-renderer.cpp.s
-.PHONY : src/renderer/parallel-deferred-renderer.s
+src/renderer/parallel-deferred-renderer_omp.s: src/renderer/parallel-deferred-renderer_omp.cpp.s
+.PHONY : src/renderer/parallel-deferred-renderer_omp.s
 
 # target to generate assembly for a file
-src/renderer/parallel-deferred-renderer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parallel-Deferred-Renderer.dir/build.make CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer.cpp.s
-.PHONY : src/renderer/parallel-deferred-renderer.cpp.s
+src/renderer/parallel-deferred-renderer_omp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Parallel-Deferred-Renderer.dir/build.make CMakeFiles/Parallel-Deferred-Renderer.dir/src/renderer/parallel-deferred-renderer_omp.cpp.s
+.PHONY : src/renderer/parallel-deferred-renderer_omp.cpp.s
 
 src/resources/material.o: src/resources/material.cpp.o
 .PHONY : src/resources/material.o
@@ -565,6 +578,7 @@ help:
 	@echo "... Parallel-Deferred-Renderer"
 	@echo "... assimp"
 	@echo "... glfw"
+	@echo "... zlibstatic"
 	@echo "... api/glad/src/glad.o"
 	@echo "... api/glad/src/glad.i"
 	@echo "... api/glad/src/glad.s"
@@ -589,9 +603,9 @@ help:
 	@echo "... src/mesh/model.o"
 	@echo "... src/mesh/model.i"
 	@echo "... src/mesh/model.s"
-	@echo "... src/renderer/parallel-deferred-renderer.o"
-	@echo "... src/renderer/parallel-deferred-renderer.i"
-	@echo "... src/renderer/parallel-deferred-renderer.s"
+	@echo "... src/renderer/parallel-deferred-renderer_omp.o"
+	@echo "... src/renderer/parallel-deferred-renderer_omp.i"
+	@echo "... src/renderer/parallel-deferred-renderer_omp.s"
 	@echo "... src/resources/material.o"
 	@echo "... src/resources/material.i"
 	@echo "... src/resources/material.s"

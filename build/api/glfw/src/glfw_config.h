@@ -61,7 +61,7 @@
 /* #undef _GLFW_USE_HYBRID_HPG */
 
 // Define this to 1 if the Xxf86vm X11 extension is available
-#define _GLFW_HAS_XF86VM
+/* #undef _GLFW_HAS_XF86VM */
 
 // Define this to 1 if glfwInit should change the current directory
 /* #undef _GLFW_USE_CHDIR */
