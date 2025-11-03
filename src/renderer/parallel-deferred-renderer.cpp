@@ -500,57 +500,83 @@ int main(int argc, char* argv[])
         //------------------------
         // Lighting Pass rendering
         //------------------------
+        double startTotal_light = omp_get_wtime();  
+
         glQueryCounter(queryIDLighting[0], GL_TIMESTAMP);
         glBindFramebuffer(GL_FRAMEBUFFER, postprocessFBO);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         lightingBRDFShader.useShader();
 
-        glActiveTexture(GL_TEXTURE0);
-        glBindTexture(GL_TEXTURE_2D, gPosition);
-        glActiveTexture(GL_TEXTURE1);
-        glBindTexture(GL_TEXTURE_2D, gAlbedo);
-        glActiveTexture(GL_TEXTURE2);
-        glBindTexture(GL_TEXTURE_2D, gNormal);
-        glActiveTexture(GL_TEXTURE3);
-        glBindTexture(GL_TEXTURE_2D, gEffects);
-        glActiveTexture(GL_TEXTURE4);
-        glBindTexture(GL_TEXTURE_2D, saoBlurBuffer);
-        glActiveTexture(GL_TEXTURE5);
-        envMapHDR.useTexture();
-        glActiveTexture(GL_TEXTURE6);
-        envMapIrradiance.useTexture();
-        glActiveTexture(GL_TEXTURE7);
-        envMapPrefilter.useTexture();
-        glActiveTexture(GL_TEXTURE8);
-        envMapLUT.useTexture();
+        glActiveTexture(GL_TEXTURE0); glBindTexture(GL_TEXTURE_2D, gPosition);
+        glActiveTexture(GL_TEXTURE1); glBindTexture(GL_TEXTURE_2D, gAlbedo);
+        glActiveTexture(GL_TEXTURE2); glBindTexture(GL_TEXTURE_2D, gNormal);
+        glActiveTexture(GL_TEXTURE3); glBindTexture(GL_TEXTURE_2D, gEffects);
+        glActiveTexture(GL_TEXTURE4); glBindTexture(GL_TEXTURE_2D, saoBlurBuffer);
+        glActiveTexture(GL_TEXTURE5); envMapHDR.useTexture();
+        glActiveTexture(GL_TEXTURE6); envMapIrradiance.useTexture();
+        glActiveTexture(GL_TEXTURE7); envMapPrefilter.useTexture();
+        glActiveTexture(GL_TEXTURE8); envMapLUT.useTexture();
 
-        lightPoint1.setLightPosition(lightPointPosition1);
-        lightPoint2.setLightPosition(lightPointPosition2);
-        lightPoint3.setLightPosition(lightPointPosition3);
-        lightPoint1.setLightColor(glm::vec4(lightPointColor1, 1.0f));
-        lightPoint2.setLightColor(glm::vec4(lightPointColor2, 1.0f));
-        lightPoint3.setLightColor(glm::vec4(lightPointColor3, 1.0f));
-        lightPoint1.setLightRadius(lightPointRadius1);
-        lightPoint2.setLightRadius(lightPointRadius2);
-        lightPoint3.setLightRadius(lightPointRadius3);
+        double startLights = omp_get_wtime();
+
+        #pragma omp parallel sections
+        {
+            #pragma omp section
+            {
+                #pragma omp parallel for schedule(static)
+                for (int i = 0; i < (int)Light::lightPointList.size(); ++i) {
+                    Light& L = Light::lightPointList[i];
+                    L.setLightPosition(L.getLightPosition());
+                    L.setLightColor(L.getLightColor());
+                    L.setLightRadius(L.getLightRadius());
+                }
+            }
+
+            #pragma omp section
+            {
+                #pragma omp parallel for schedule(static)
+                for (int i = 0; i < (int)Light::lightDirectionalList.size(); ++i) {
+                    Light& L = Light::lightDirectionalList[i];
+                    L.setLightDirection(L.getLightDirection());
+                    L.setLightColor(L.getLightColor());
+                }
+            }
+        }
+
+        double endLights = omp_get_wtime();
+
+        double startMatrices = omp_get_wtime();
+
+        glm::mat4 inverseView;
+        glm::mat4 inverseProj;
+
+         #pragma omp parallel sections
+        {
+            #pragma omp section
+            {
+                inverseView = glm::transpose(view);
+            }
+            #pragma omp section
+            {
+                inverseProj = glm::inverse(projection);
+            }
+        }
+
+        double endMatrices = omp_get_wtime();
+
+        double startUniforms = omp_get_wtime();
 
         for (int i = 0; i < Light::lightPointList.size(); i++)
-        {
             Light::lightPointList[i].renderToShader(lightingBRDFShader, camera);
-        }
-
-        lightDirectional1.setLightDirection(lightDirectionalDirection1);
-        lightDirectional1.setLightColor(glm::vec4(lightDirectionalColor1, 1.0f));
 
         for (int i = 0; i < Light::lightDirectionalList.size(); i++)
-        {
             Light::lightDirectionalList[i].renderToShader(lightingBRDFShader, camera);
-        }
 
-        glUniformMatrix4fv(glGetUniformLocation(lightingBRDFShader.Program, "inverseView"), 1, GL_FALSE, glm::value_ptr(glm::transpose(view)));
-        glUniformMatrix4fv(glGetUniformLocation(lightingBRDFShader.Program, "inverseProj"), 1, GL_FALSE, glm::value_ptr(glm::inverse(projection)));
+        glUniformMatrix4fv(glGetUniformLocation(lightingBRDFShader.Program, "inverseView"), 1, GL_FALSE, glm::value_ptr(inverseView));
+        glUniformMatrix4fv(glGetUniformLocation(lightingBRDFShader.Program, "inverseProj"), 1, GL_FALSE, glm::value_ptr(inverseProj));
         glUniformMatrix4fv(glGetUniformLocation(lightingBRDFShader.Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
+
         glUniform1f(glGetUniformLocation(lightingBRDFShader.Program, "materialRoughness"), materialRoughness);
         glUniform1f(glGetUniformLocation(lightingBRDFShader.Program, "materialMetallicity"), materialMetallicity);
         glUniform3f(glGetUniformLocation(lightingBRDFShader.Program, "materialF0"), materialF0.r, materialF0.g, materialF0.b);
@@ -561,10 +587,22 @@ int main(int argc, char* argv[])
         glUniform1i(glGetUniformLocation(lightingBRDFShader.Program, "iblMode"), iblMode);
         glUniform1i(glGetUniformLocation(lightingBRDFShader.Program, "attenuationMode"), attenuationMode);
 
+        double endUniforms = omp_get_wtime();
+
         quadRender.drawShape();
 
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
         glQueryCounter(queryIDLighting[1], GL_TIMESTAMP);
+
+        double endTotal_light = omp_get_wtime();
+
+
+        std::cout << "Lighting Pass Timings:" << std::endl;
+        std::cout << " - Lights update:   " << (endLights - startLights) * 1000.0 << " ms" << std::endl;
+        std::cout << " - Matrices calc:   " << (endMatrices - startMatrices) * 1000.0 << " ms" << std::endl;
+        std::cout << " - Uniform upload:  " << (endUniforms - startUniforms) * 1000.0 << " ms" << std::endl;
+        std::cout << " - Total CPU time:  " << (endTotal_light - startTotal_light) * 1000.0 << " ms" << std::endl;
+        std::cout << "============================" << std::endl;
 
 
         //-------------------------------
@@ -601,30 +639,57 @@ int main(int argc, char* argv[])
         //-----------------------
         // Forward Pass rendering
         //-----------------------
+        double startTotal_rend = omp_get_wtime();
+
         glQueryCounter(queryIDForward[0], GL_TIMESTAMP);
         glBindFramebuffer(GL_READ_FRAMEBUFFER, gBuffer);
         glBindFramebuffer(GL_DRAW_FRAMEBUFFER, 0);
 
-        // Copy the depth informations from the Geometry Pass into the default framebuffer
         glBlitFramebuffer(0, 0, WIDTH, HEIGHT, 0, 0, WIDTH, HEIGHT, GL_DEPTH_BUFFER_BIT, GL_NEAREST);
         glBindFramebuffer(GL_FRAMEBUFFER, 0);
 
-        // Shape(s) rendering
+        double startLightPrep;
+        double endLightPrep;
+        double startDraw_rend;
+        double endDraw_rend;
         if (pointMode)
         {
             simpleShader.useShader();
             glUniformMatrix4fv(glGetUniformLocation(simpleShader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
             glUniformMatrix4fv(glGetUniformLocation(simpleShader.Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
 
+            startLightPrep = omp_get_wtime();
+            std::vector<glm::vec4> lightColors(Light::lightPointList.size());
+
+            #pragma omp parallel for schedule(static)
+            for (int i = 0; i < (int)Light::lightPointList.size(); i++)
+            {
+                lightColors[i] = Light::lightPointList[i].getLightColor();
+            }
+            endLightPrep = omp_get_wtime();
+
+            startDraw_rend = omp_get_wtime();
             for (int i = 0; i < Light::lightPointList.size(); i++)
             {
-                glUniform4f(glGetUniformLocation(simpleShader.Program, "lightColor"), Light::lightPointList[i].getLightColor().r, Light::lightPointList[i].getLightColor().g, Light::lightPointList[i].getLightColor().b, Light::lightPointList[i].getLightColor().a);
+                glUniform4f(
+                    glGetUniformLocation(simpleShader.Program, "lightColor"),
+                    lightColors[i].r, lightColors[i].g, lightColors[i].b, lightColors[i].a
+                );
 
                 if (Light::lightPointList[i].isMesh())
                     Light::lightPointList[i].lightMesh.drawShape(simpleShader, view, projection, camera);
             }
+            endDraw_rend = omp_get_wtime();
         }
+
         glQueryCounter(queryIDForward[1], GL_TIMESTAMP);
+        double endTotal_rend = omp_get_wtime();
+
+        std::cout << "Forward Pass Timings:" << std::endl;
+        std::cout << " - Light prep:   " << (endLightPrep - startLightPrep) * 1000.0 << " ms" << std::endl;
+        std::cout << " - Draw calls:   " << (endDraw_rend - startDraw_rend) * 1000.0 << " ms" << std::endl;
+        std::cout << " - Total CPU:    " << (endTotal_rend - startTotal_rend) * 1000.0 << " ms" << std::endl;
+        std::cout << "============================" << std::endl;
 
 
         //----------------
