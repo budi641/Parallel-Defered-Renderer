@@ -14,6 +14,10 @@
 
 #include "shape.h"
 
+#include "shader.h"
+#include "camera.h"
+
+
 
 class Light
 {
@@ -32,6 +36,7 @@ class Light
 
         Light();
         ~Light();
+        static void renderAllToShader(Shader& shader, Camera& camera);
         void setLight(glm::vec3 position, glm::vec4 color, float radius, bool isMesh);
         void setLight(glm::vec3 direction, glm::vec4 color);
         void renderToShader(Shader& shader, Camera& camera);
@@ -46,6 +51,8 @@ class Light
         void setLightDirection(glm::vec3 direction);
         void setLightColor(glm::vec4 color);
         void setLightRadius(float radius);
+        
+
 };
 
 #endif

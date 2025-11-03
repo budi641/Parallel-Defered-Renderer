@@ -1,168 +1,169 @@
-#include <string>
-#include <fstream>
-#include <sstream>
-#include <iostream>
-#include <vector>
-
-#include <glad/glad.h>
-#include <glm/glm.hpp>
-#include <glm/gtc/matrix_transform.hpp>
-#include <glm/gtc/type_ptr.hpp>
-
+#include <omp.h>
 #include "light.h"
-#include "shape.h"
+#include "shader.h"
+#include "camera.h"
 
-
-
-Light::Light()
+// basically, openGL can't be parallelized so we have to split the logic and the lib, ik this func sucks but wtv
+void Light::renderAllToShader(Shader& shader, Camera& camera)
 {
-
-}
-
-
-Light::~Light()
-{
-
-}
-
-
-void Light::setLight(glm::vec3 position, glm::vec4 color, float radius, bool isMesh)
-{
-    this->lightType = "point";
-    this->lightPosition = position;
-    this->lightColor = color;
-    this->lightRadius = radius;
-    this->lightPointID = lightPointCount;
-    this->lightToMesh = isMesh;
-
-    if(this->lightToMesh)
-    {
-        this->lightMesh.setShape("cube", glm::vec3(0.0f, 0.0f, 0.0f));
-        this->lightMesh.setShapePosition(this->lightPosition);
-        this->lightMesh.setShapeScale(glm::vec3(0.15f, 0.15f, 0.15f));
-    }
-
-    lightPointCount = ++lightPointCount;
-    lightPointList.push_back(*this);
-}
-
-
-void Light::setLight(glm::vec3 direction, glm::vec4 color)
-{
-    this->lightType = "directional";
-    this->lightDirection = direction;
-    this->lightColor = color;
-    this->lightDirectionalID = lightDirectionalCount;
-
-    lightDirectionalCount = ++lightDirectionalCount;
-    lightDirectionalList.push_back(*this);
-}
-
-
-void Light::renderToShader(Shader& shader, Camera& camera)
-{
+    std::cout << "Running with " << omp_get_max_threads() << " threads\n";
     shader.useShader();
 
-    if(this->lightType == "point")
-    {
-        glm::vec3 lightPositionViewSpace = glm::vec3(camera.GetViewMatrix() * glm::vec4(this->lightPosition, 1.0f));
+    glm::mat4 viewMatrix = camera.GetViewMatrix();
 
-        glUniform3f(glGetUniformLocation(shader.Program, ("lightPointArray["+ std::to_string(this->lightPointID) +"].position").c_str()), lightPositionViewSpace.x, lightPositionViewSpace.y, lightPositionViewSpace.z);
-        glUniform4f(glGetUniformLocation(shader.Program, ("lightPointArray["+ std::to_string(this->lightPointID) +"].color").c_str()), this->lightColor.r, this->lightColor.g, this->lightColor.b, this->lightColor.a);
-        glUniform1f(glGetUniformLocation(shader.Program, ("lightPointArray["+ std::to_string(this->lightPointID) +"].radius").c_str()), this->lightRadius);
+    
+    struct PointLightData {
+        glm::vec3 positionViewSpace;
+        glm::vec4 color;
+        float radius;
+        int id;
+    };
+
+    struct DirectionalLightData {
+        glm::vec3 directionViewSpace;
+        glm::vec4 color;
+        int id;
+    };
+
+    std::vector<PointLightData> pointData(lightPointList.size());
+    std::vector<DirectionalLightData> dirData(lightDirectionalList.size());
+
+    // point light
+#pragma omp parallel for schedule(static)
+    for (int i = 0; i < (int)lightPointList.size(); ++i)
+    {
+        const Light& L = lightPointList[i];
+        PointLightData d;
+        d.positionViewSpace = glm::vec3(viewMatrix * glm::vec4(L.lightPosition, 1.0f));
+        d.color = L.lightColor;
+        d.radius = L.lightRadius;
+        d.id = L.lightPointID;
+        pointData[i] = d;
     }
 
-    else if(this->lightType == "directional")
+    //dir light
+#pragma omp parallel for schedule(static)
+    for (int i = 0; i < (int)lightDirectionalList.size(); ++i)
     {
-        glm::vec3 lightDirectionViewSpace = glm::vec3(camera.GetViewMatrix() * glm::vec4(this->lightDirection, 0.0f));
+        const Light& L = lightDirectionalList[i];
+        DirectionalLightData d;
+        d.directionViewSpace = glm::vec3(viewMatrix * glm::vec4(L.lightDirection, 0.0f));
+        d.color = L.lightColor;
+        d.id = L.lightDirectionalID;
+        dirData[i] = d;
+    }
 
-        glUniform3f(glGetUniformLocation(shader.Program, ("lightDirectionalArray["+ std::to_string(this->lightDirectionalID) +"].direction").c_str()), lightDirectionViewSpace.x, lightDirectionViewSpace.y, lightDirectionViewSpace.z);
-        glUniform4f(glGetUniformLocation(shader.Program, ("lightDirectionalArray["+ std::to_string(this->lightDirectionalID) +"].color").c_str()), this->lightColor.r, this->lightColor.g, this->lightColor.b, this->lightColor.a);
+    //openGL part
+    for (const auto& d : pointData)
+    {
+        std::string prefix = "lightPointArray[" + std::to_string(d.id) + "]";
+        glUniform3f(glGetUniformLocation(shader.Program, (prefix + ".position").c_str()),
+            d.positionViewSpace.x, d.positionViewSpace.y, d.positionViewSpace.z);
+        glUniform4f(glGetUniformLocation(shader.Program, (prefix + ".color").c_str()),
+            d.color.r, d.color.g, d.color.b, d.color.a);
+        glUniform1f(glGetUniformLocation(shader.Program, (prefix + ".radius").c_str()),
+            d.radius);
+    }
+
+    for (const auto& d : dirData)
+    {
+        std::string prefix = "lightDirectionalArray[" + std::to_string(d.id) + "]";
+        glUniform3f(glGetUniformLocation(shader.Program, (prefix + ".direction").c_str()),
+            d.directionViewSpace.x, d.directionViewSpace.y, d.directionViewSpace.z);
+        glUniform4f(glGetUniformLocation(shader.Program, (prefix + ".color").c_str()),
+            d.color.r, d.color.g, d.color.b, d.color.a);
     }
 }
 
+//too scared to delete those
 
-std::string Light::getLightType()
+GLuint Light::lightPointCount = 0;
+GLuint Light::lightDirectionalCount = 0;
+std::vector<Light> Light::lightPointList;
+std::vector<Light> Light::lightDirectionalList;
+
+Light::Light() {}
+Light::~Light() {}
+
+void Light::setLightPosition(glm::vec3 position)
 {
-    if(this->lightType == "point")
-        return lightPointList[this->lightPointID].lightType;
-    if(this->lightType == "directional")
-        return lightDirectionalList[this->lightPointID].lightType;
-
+    lightPosition = position;
 }
 
+void Light::setLightDirection(glm::vec3 direction)
+{
+    lightDirection = direction;
+}
+
+void Light::setLightColor(glm::vec4 color)
+{
+    lightColor = color;
+}
+
+void Light::setLightRadius(float radius)
+{
+    lightRadius = radius;
+}
 
 glm::vec3 Light::getLightPosition()
 {
-    return lightPointList[this->lightPointID].lightPosition;
+    return lightPosition;
 }
-
 
 glm::vec3 Light::getLightDirection()
 {
-    return lightDirectionalList[this->lightPointID].lightDirection;
+    return lightDirection;
 }
-
 
 glm::vec4 Light::getLightColor()
 {
-    if(this->lightType == "point")
-        return lightPointList[this->lightPointID].lightColor;
-    if(this->lightType == "directional")
-        return lightDirectionalList[this->lightPointID].lightColor;
+    return lightColor;
 }
-
 
 float Light::getLightRadius()
 {
-    return lightPointList[this->lightPointID].lightRadius;
+    return lightRadius;
 }
-
-
-GLuint Light::getLightID()
-{
-    if(this->lightType == "point")
-        return lightPointID;
-    if(this->lightType == "directional")
-        return lightDirectionalID;
-}
-
 
 bool Light::isMesh()
 {
     return lightToMesh;
 }
 
-
-void Light::setLightPosition(glm::vec3 position)
+void Light::renderToShader(Shader& shader, Camera& camera)
 {
-    lightPointList[this->lightPointID].lightPosition = position;
-    lightPointList[this->lightPointID].lightMesh.setShapePosition(position);
+    
+    shader.useShader();
+    std::string prefix = "singleLight";
+    glm::mat4 viewMatrix = camera.GetViewMatrix();
+    glm::vec3 posView = glm::vec3(viewMatrix * glm::vec4(lightPosition, 1.0f));
+
+    glUniform3f(glGetUniformLocation(shader.Program, (prefix + ".position").c_str()),
+        posView.x, posView.y, posView.z);
+    glUniform4f(glGetUniformLocation(shader.Program, (prefix + ".color").c_str()),
+        lightColor.r, lightColor.g, lightColor.b, lightColor.a);
+    glUniform1f(glGetUniformLocation(shader.Program, (prefix + ".radius").c_str()),
+        lightRadius);
 }
 
-
-void Light::setLightDirection(glm::vec3 direction)
+void Light::setLight(glm::vec3 position, glm::vec4 color, float radius, bool isMesh)
 {
-    lightDirectionalList[this->lightDirectionalID].lightDirection = direction;
+    lightType = "point";
+    lightPosition = position;
+    lightColor = color;
+    lightRadius = radius;
+    lightToMesh = isMesh;
+
+    lightPointID = lightPointCount++;
+    lightPointList.push_back(*this);
 }
 
-
-void Light::setLightColor(glm::vec4 color)
+void Light::setLight(glm::vec3 direction, glm::vec4 color)
 {
-    if(this->lightType == "point")
-        lightPointList[this->lightPointID].lightColor = color;
-    if(this->lightType == "directional")
-        lightDirectionalList[this->lightDirectionalID].lightColor = color;
+    lightType = "directional";
+    lightDirection = direction;
+    lightColor = color;
+
+    lightDirectionalID = lightDirectionalCount++;
+    lightDirectionalList.push_back(*this);
 }
-
-void Light::setLightRadius(float radius)
-{
-    lightPointList[this->lightPointID].lightRadius = radius;
-}
-
-
-GLuint Light::lightPointCount = 0;
-GLuint Light::lightDirectionalCount = 0;
-
-std::vector<Light> Light::lightPointList;
-std::vector<Light> Light::lightDirectionalList;

@@ -1,3 +1,5 @@
+#include <omp.h>
+
 #include "shader.h"
 #include "camera.h"
 #include "model.h"
@@ -175,6 +177,7 @@ Shape envCubeRender;
 
 int main(int argc, char* argv[])
 {
+    std::cout << "Running with " << omp_get_max_threads() << " threads\n";
     glfwInit();
 
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
