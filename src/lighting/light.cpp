@@ -6,12 +6,13 @@
 // basically, openGL can't be parallelized so we have to split the logic and the lib, ik this func sucks but wtv
 void Light::renderAllToShader(Shader& shader, Camera& camera)
 {
-    std::cout << "Running with " << omp_get_max_threads() << " threads\n";
-    shader.useShader();
+    double startTotal = omp_get_wtime(); 
 
+    std::cout << "\n[Lighting] Running with " << omp_get_max_threads() << " threads\n";
+
+    shader.useShader();
     glm::mat4 viewMatrix = camera.GetViewMatrix();
 
-    
     struct PointLightData {
         glm::vec3 positionViewSpace;
         glm::vec4 color;
@@ -28,7 +29,9 @@ void Light::renderAllToShader(Shader& shader, Camera& camera)
     std::vector<PointLightData> pointData(lightPointList.size());
     std::vector<DirectionalLightData> dirData(lightDirectionalList.size());
 
-    // point light
+    // pointlights
+    double startPoints = omp_get_wtime();
+
 #pragma omp parallel for schedule(static)
     for (int i = 0; i < (int)lightPointList.size(); ++i)
     {
@@ -41,7 +44,11 @@ void Light::renderAllToShader(Shader& shader, Camera& camera)
         pointData[i] = d;
     }
 
-    //dir light
+    double endPoints = omp_get_wtime();
+
+    // dir lights
+    double startDirs = omp_get_wtime();
+
 #pragma omp parallel for schedule(static)
     for (int i = 0; i < (int)lightDirectionalList.size(); ++i)
     {
@@ -53,7 +60,11 @@ void Light::renderAllToShader(Shader& shader, Camera& camera)
         dirData[i] = d;
     }
 
-    //openGL part
+    double endDirs = omp_get_wtime();
+
+    // opengl part
+    double startGL = omp_get_wtime();
+
     for (const auto& d : pointData)
     {
         std::string prefix = "lightPointArray[" + std::to_string(d.id) + "]";
@@ -73,6 +84,15 @@ void Light::renderAllToShader(Shader& shader, Camera& camera)
         glUniform4f(glGetUniformLocation(shader.Program, (prefix + ".color").c_str()),
             d.color.r, d.color.g, d.color.b, d.color.a);
     }
+
+    double endGL = omp_get_wtime();
+    double endTotal = omp_get_wtime();
+
+    
+    std::cout << "[Lighting] Point light prep: " << (endPoints - startPoints) * 1000.0 << " ms\n";
+    std::cout << "[Lighting] Directional prep: " << (endDirs - startDirs) * 1000.0 << " ms\n";
+    std::cout << "[Lighting] OpenGL upload:    " << (endGL - startGL) * 1000.0 << " ms\n";
+    std::cout << "[Lighting] Total time:       " << (endTotal - startTotal) * 1000.0 << " ms\n\n";
 }
 
 //too scared to delete those
