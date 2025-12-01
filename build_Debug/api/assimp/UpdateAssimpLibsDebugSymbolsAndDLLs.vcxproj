@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{5AB3459E-A4E0-3CB0-B2CC-A7332A5BD704}</ProjectGuid>
+    <ProjectGuid>{11232F7C-F7A1-30DE-8C10-B470BA2127FC}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -33,22 +33,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -66,7 +66,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\build_Debug\api\assimp;D:\Parallel-Defered-Renderer\api\assimp\include;D:\Parallel-Defered-Renderer\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -76,7 +76,7 @@
     <PostBuildEvent>
       <Message>							</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.dll D:/Parallel-Defered-Renderer/api/assimp/bin64/assimp-vc140-mt.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.dll C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/bin64/assimp-vc140-mt.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -85,7 +85,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.exp D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mt.exp
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.exp C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mt.exp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -94,7 +94,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.lib D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mt.lib
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.lib C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mt.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -103,7 +103,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.dll D:/Parallel-Defered-Renderer/api/assimp/bin64/assimp-vc140-mtd.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.dll C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/bin64/assimp-vc140-mtd.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -112,7 +112,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.exp D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.exp
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.exp C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.exp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -121,7 +121,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.ilk D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.ilk
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.ilk C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.ilk
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -130,7 +130,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.lib D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.lib
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.lib C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -139,7 +139,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.pdb D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.pdb
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.pdb C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.pdb
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -151,7 +151,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\build_Debug\api\assimp;D:\Parallel-Defered-Renderer\api\assimp\include;D:\Parallel-Defered-Renderer\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -161,7 +161,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message>							</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.dll D:/Parallel-Defered-Renderer/api/assimp/bin64/assimp-vc140-mt.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.dll C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/bin64/assimp-vc140-mt.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -170,7 +170,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.exp D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mt.exp
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.exp C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mt.exp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -179,7 +179,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.lib D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mt.lib
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.lib C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mt.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -188,7 +188,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.dll D:/Parallel-Defered-Renderer/api/assimp/bin64/assimp-vc140-mtd.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.dll C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/bin64/assimp-vc140-mtd.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -197,7 +197,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.exp D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.exp
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.exp C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.exp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -206,7 +206,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.ilk D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.ilk
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.ilk C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.ilk
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -215,7 +215,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.lib D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.lib
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.lib C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -224,7 +224,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.pdb D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.pdb
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.pdb C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.pdb
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -236,7 +236,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\build_Debug\api\assimp;D:\Parallel-Defered-Renderer\api\assimp\include;D:\Parallel-Defered-Renderer\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -246,7 +246,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message>							</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.dll D:/Parallel-Defered-Renderer/api/assimp/bin64/assimp-vc140-mt.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.dll C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/bin64/assimp-vc140-mt.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -255,7 +255,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.exp D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mt.exp
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.exp C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mt.exp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -264,7 +264,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.lib D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mt.lib
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.lib C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mt.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -273,7 +273,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.dll D:/Parallel-Defered-Renderer/api/assimp/bin64/assimp-vc140-mtd.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.dll C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/bin64/assimp-vc140-mtd.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -282,7 +282,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.exp D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.exp
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.exp C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.exp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -291,7 +291,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.ilk D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.ilk
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.ilk C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.ilk
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -300,7 +300,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.lib D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.lib
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.lib C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -309,7 +309,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.pdb D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.pdb
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.pdb C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.pdb
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -321,7 +321,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <Midl>
-      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\build_Debug\api\assimp;D:\Parallel-Defered-Renderer\api\assimp\include;D:\Parallel-Defered-Renderer\api\assimp\contrib\zlib;D:\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -331,7 +331,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <PostBuildEvent>
       <Message>							</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.dll D:/Parallel-Defered-Renderer/api/assimp/bin64/assimp-vc140-mt.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.dll C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/bin64/assimp-vc140-mt.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -340,7 +340,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.exp D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mt.exp
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.exp C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mt.exp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -349,7 +349,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.lib D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mt.lib
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Release/assimp-vc140-mt.lib C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mt.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -358,7 +358,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.dll D:/Parallel-Defered-Renderer/api/assimp/bin64/assimp-vc140-mtd.dll
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.dll C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/bin64/assimp-vc140-mtd.dll
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -367,7 +367,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.exp D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.exp
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.exp C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.exp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -376,7 +376,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.ilk D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.ilk
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.ilk C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.ilk
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -385,7 +385,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.lib D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.lib
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.lib C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.lib
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -394,7 +394,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy D:/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.pdb D:/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.pdb
+"C:\Program Files\CMake\bin\cmake.exe" -E copy C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/code/Debug/assimp-vc140-mtd.pdb C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/lib64/assimp-vc140-mtd.pdb
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -405,11 +405,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Parallel-Defered-Renderer\api\assimp\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Parallel-Defered-Renderer/api/assimp/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-file D:/Parallel-Defered-Renderer/build_Debug/api/assimp/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -417,12 +417,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPkgConfig.cmake;D:\Parallel-Defered-Renderer\api\assimp\assimp-config-version.cmake.in;D:\Parallel-Defered-Renderer\api\assimp\assimp-config.cmake.in;D:\Parallel-Defered-Renderer\api\assimp\assimp.pc.in;D:\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindDirectX.cmake;D:\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindPkgMacros.cmake;D:\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindZLIB.cmake;D:\Parallel-Defered-Renderer\api\assimp\cmake-modules\PrecompiledHeader.cmake;D:\Parallel-Defered-Renderer\api\assimp\revision.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\assimp\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPkgConfig.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\assimp-config-version.cmake.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\assimp-config.cmake.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\assimp.pc.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindDirectX.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindPkgMacros.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindZLIB.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\cmake-modules\PrecompiledHeader.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\revision.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Parallel-Defered-Renderer/api/assimp/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-file D:/Parallel-Defered-Renderer/build_Debug/api/assimp/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -430,12 +430,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPkgConfig.cmake;D:\Parallel-Defered-Renderer\api\assimp\assimp-config-version.cmake.in;D:\Parallel-Defered-Renderer\api\assimp\assimp-config.cmake.in;D:\Parallel-Defered-Renderer\api\assimp\assimp.pc.in;D:\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindDirectX.cmake;D:\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindPkgMacros.cmake;D:\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindZLIB.cmake;D:\Parallel-Defered-Renderer\api\assimp\cmake-modules\PrecompiledHeader.cmake;D:\Parallel-Defered-Renderer\api\assimp\revision.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\assimp\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPkgConfig.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\assimp-config-version.cmake.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\assimp-config.cmake.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\assimp.pc.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindDirectX.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindPkgMacros.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindZLIB.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\cmake-modules\PrecompiledHeader.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\revision.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Parallel-Defered-Renderer/api/assimp/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-file D:/Parallel-Defered-Renderer/build_Debug/api/assimp/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -443,12 +443,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPkgConfig.cmake;D:\Parallel-Defered-Renderer\api\assimp\assimp-config-version.cmake.in;D:\Parallel-Defered-Renderer\api\assimp\assimp-config.cmake.in;D:\Parallel-Defered-Renderer\api\assimp\assimp.pc.in;D:\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindDirectX.cmake;D:\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindPkgMacros.cmake;D:\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindZLIB.cmake;D:\Parallel-Defered-Renderer\api\assimp\cmake-modules\PrecompiledHeader.cmake;D:\Parallel-Defered-Renderer\api\assimp\revision.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\assimp\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPkgConfig.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\assimp-config-version.cmake.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\assimp-config.cmake.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\assimp.pc.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindDirectX.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindPkgMacros.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindZLIB.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\cmake-modules\PrecompiledHeader.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\revision.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Parallel-Defered-Renderer/api/assimp/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-file D:/Parallel-Defered-Renderer/build_Debug/api/assimp/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -456,16 +456,17 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPkgConfig.cmake;D:\Parallel-Defered-Renderer\api\assimp\assimp-config-version.cmake.in;D:\Parallel-Defered-Renderer\api\assimp\assimp-config.cmake.in;D:\Parallel-Defered-Renderer\api\assimp\assimp.pc.in;D:\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindDirectX.cmake;D:\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindPkgMacros.cmake;D:\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindZLIB.cmake;D:\Parallel-Defered-Renderer\api\assimp\cmake-modules\PrecompiledHeader.cmake;D:\Parallel-Defered-Renderer\api\assimp\revision.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\assimp\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPkgConfig.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\assimp-config-version.cmake.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\assimp-config.cmake.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\assimp.pc.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindDirectX.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindPkgMacros.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\cmake-modules\FindZLIB.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\cmake-modules\PrecompiledHeader.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\revision.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="D:\Parallel-Defered-Renderer\build_Debug\ZERO_CHECK.vcxproj">
-      <Project>{6BFC4548-6EE7-387E-9E10-DF5EFDDF2576}</Project>
+    <ProjectReference Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\ZERO_CHECK.vcxproj">
+      <Project>{A0F2C44B-67AF-323E-8A5C-EBABF1169E11}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

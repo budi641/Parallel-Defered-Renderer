@@ -1,0 +1,16 @@
+C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\camera\camera.cpp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\camera.obj
+C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\lighting\light.cpp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\light.obj
+C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\mesh\mesh.cpp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\mesh.obj
+C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\mesh\model.cpp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\model.obj
+C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\renderer\mpi_domain_decomposition.cpp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\mpi_domain_decomposition.obj
+C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\renderer\mpi_performance.cpp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\mpi_performance.obj
+C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\renderer\parallel-deferred-renderer_omp.cpp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\parallel-deferred-renderer_omp.obj
+C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\resources\material.cpp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\material.obj
+C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\resources\shader.cpp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\shader.obj
+C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\resources\shape.cpp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\shape.obj
+C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\resources\skybox.cpp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\skybox.obj
+C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\resources\texture.cpp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\texture.obj
+C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glad\src\glad.c;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\glad.obj
+C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\imgui\imgui.cpp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\imgui.obj
+C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\imgui\imgui_draw.cpp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\imgui_draw.obj
+C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\imgui\imgui_impl_glfw_gl3.cpp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer.dir\Debug\imgui_impl_glfw_gl3.obj

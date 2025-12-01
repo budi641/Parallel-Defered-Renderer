@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
@@ -25,7 +25,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{EFF41610-B2BA-39FD-8026-86868B5E040D}</ProjectGuid>
+    <ProjectGuid>{991ACC05-B6C7-330C-83DD-ED59098FF9B7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -36,22 +36,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>Utility</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -108,11 +108,11 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Parallel-Defered-Renderer\api\glfw\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Parallel-Defered-Renderer/api/glfw/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/glfw/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-file D:/Parallel-Defered-Renderer/build_Debug/api/glfw/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/glfw/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -120,12 +120,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;D:\Parallel-Defered-Renderer\api\glfw\CMake\modules\FindVulkan.cmake;D:\Parallel-Defered-Renderer\api\glfw\cmake_uninstall.cmake.in;D:\Parallel-Defered-Renderer\api\glfw\src\glfw3.pc.in;D:\Parallel-Defered-Renderer\api\glfw\src\glfw3Config.cmake.in;D:\Parallel-Defered-Renderer\api\glfw\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\glfw\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\CMake\modules\FindVulkan.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\cmake_uninstall.cmake.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\glfw3.pc.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\glfw3Config.cmake.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Parallel-Defered-Renderer/api/glfw/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/glfw/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-file D:/Parallel-Defered-Renderer/build_Debug/api/glfw/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/glfw/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -133,12 +133,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;D:\Parallel-Defered-Renderer\api\glfw\CMake\modules\FindVulkan.cmake;D:\Parallel-Defered-Renderer\api\glfw\cmake_uninstall.cmake.in;D:\Parallel-Defered-Renderer\api\glfw\src\glfw3.pc.in;D:\Parallel-Defered-Renderer\api\glfw\src\glfw3Config.cmake.in;D:\Parallel-Defered-Renderer\api\glfw\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\glfw\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\CMake\modules\FindVulkan.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\cmake_uninstall.cmake.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\glfw3.pc.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\glfw3Config.cmake.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Parallel-Defered-Renderer/api/glfw/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/glfw/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-file D:/Parallel-Defered-Renderer/build_Debug/api/glfw/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/glfw/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -146,12 +146,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;D:\Parallel-Defered-Renderer\api\glfw\CMake\modules\FindVulkan.cmake;D:\Parallel-Defered-Renderer\api\glfw\cmake_uninstall.cmake.in;D:\Parallel-Defered-Renderer\api\glfw\src\glfw3.pc.in;D:\Parallel-Defered-Renderer\api\glfw\src\glfw3Config.cmake.in;D:\Parallel-Defered-Renderer\api\glfw\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\glfw\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\CMake\modules\FindVulkan.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\cmake_uninstall.cmake.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\glfw3.pc.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\glfw3Config.cmake.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Parallel-Defered-Renderer/api/glfw/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/glfw/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-file D:/Parallel-Defered-Renderer/build_Debug/api/glfw/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/glfw/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -159,22 +159,23 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.30\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.30\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.30\Modules\WriteBasicConfigVersionFile.cmake;D:\Parallel-Defered-Renderer\api\glfw\CMake\modules\FindVulkan.cmake;D:\Parallel-Defered-Renderer\api\glfw\cmake_uninstall.cmake.in;D:\Parallel-Defered-Renderer\api\glfw\src\glfw3.pc.in;D:\Parallel-Defered-Renderer\api\glfw\src\glfw3Config.cmake.in;D:\Parallel-Defered-Renderer\api\glfw\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\glfw\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\CMake\share\cmake-4.2\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckLibraryExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\FindThreads.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\CMake\modules\FindVulkan.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\cmake_uninstall.cmake.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\glfw3.pc.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\glfw3Config.cmake.in;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\glfw_config.h.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="D:\Parallel-Defered-Renderer\build_Debug\ZERO_CHECK.vcxproj">
-      <Project>{6BFC4548-6EE7-387E-9E10-DF5EFDDF2576}</Project>
+    <ProjectReference Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\ZERO_CHECK.vcxproj">
+      <Project>{A0F2C44B-67AF-323E-8A5C-EBABF1169E11}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw.vcxproj">
-      <Project>{CE7C838E-6766-3FB3-B4A0-6AE5046A2C78}</Project>
+    <ProjectReference Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw.vcxproj">
+      <Project>{A4D15169-553E-339B-8D26-7FD4A4C5D9A1}</Project>
       <Name>glfw</Name>
     </ProjectReference>
   </ItemGroup>

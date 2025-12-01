@@ -32,8 +32,17 @@ Model::~Model()
 }
 
 
+void Model::clear()
+{
+    meshes.clear();
+    directory.clear();
+}
+
 void Model::loadModel(std::string path)
 {
+    // Clear existing meshes before loading new model
+    meshes.clear();
+    
     Assimp::Importer importer;
     const aiScene* scene = importer.ReadFile(path, aiProcess_Triangulate | aiProcess_FlipUVs);
 

@@ -2,13 +2,13 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Parallel-Defered-Renderer\build_Debug\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\Parallel-Defered-Renderer\build_Debug\Parallel-Deferred-Renderer\Debug\Parallel-Deferred-Renderer.exe</FullPath>
+      <FullPath>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\Debug\Parallel-Deferred-Renderer.exe</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>D:\Parallel-Defered-Renderer\build_Debug\x64\Debug\ALL_BUILD</FullPath>
+      <FullPath>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\x64\Debug\ALL_BUILD</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

@@ -1,4 +1,4 @@
-# Install script for directory: D:/Parallel-Defered-Renderer/api/assimp/code
+# Install script for directory: C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,66 +34,72 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/Parallel-Defered-Renderer/build_Debug/api/assimp/code/Debug/assimp-vc140-mtd.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/code/Debug/assimp-vc140-mtd.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/Parallel-Defered-Renderer/build_Debug/api/assimp/code/Release/assimp-vc140-mt.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/code/Release/assimp-vc140-mt.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Mm][Ii][Nn][Ss][Ii][Zz][Ee][Rr][Ee][Ll])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/Parallel-Defered-Renderer/build_Debug/api/assimp/code/MinSizeRel/assimp-vc140-mt.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/code/MinSizeRel/assimp-vc140-mt.lib")
   elseif(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ww][Ii][Tt][Hh][Dd][Ee][Bb][Ii][Nn][Ff][Oo])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "D:/Parallel-Defered-Renderer/build_Debug/api/assimp/code/RelWithDebInfo/assimp-vc140-mt.lib")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/code/RelWithDebInfo/assimp-vc140-mt.lib")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "assimp-dev" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/assimp" TYPE FILE FILES
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/anim.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/ai_assert.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/camera.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/color4.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/color4.inl"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/config.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/defs.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/cfileio.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/light.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/material.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/material.inl"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/matrix3x3.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/matrix3x3.inl"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/matrix4x4.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/matrix4x4.inl"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/mesh.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/postprocess.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/quaternion.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/quaternion.inl"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/scene.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/metadata.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/texture.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/types.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/vector2.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/vector2.inl"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/vector3.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/vector3.inl"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/version.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/cimport.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/importerdesc.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/Importer.hpp"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/DefaultLogger.hpp"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/ProgressHandler.hpp"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/IOStream.hpp"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/IOSystem.hpp"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/Logger.hpp"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/LogStream.hpp"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/NullLogger.hpp"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/cexport.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/Exporter.hpp"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/anim.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/ai_assert.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/camera.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/color4.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/color4.inl"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/config.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/defs.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/cfileio.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/light.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/material.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/material.inl"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/matrix3x3.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/matrix3x3.inl"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/matrix4x4.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/matrix4x4.inl"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/mesh.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/postprocess.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/quaternion.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/quaternion.inl"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/scene.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/metadata.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/texture.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/types.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/vector2.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/vector2.inl"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/vector3.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/vector3.inl"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/version.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/cimport.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/importerdesc.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/Importer.hpp"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/DefaultLogger.hpp"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/ProgressHandler.hpp"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/IOStream.hpp"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/IOSystem.hpp"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/Logger.hpp"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/LogStream.hpp"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/NullLogger.hpp"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/cexport.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/Exporter.hpp"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "assimp-dev" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/assimp/Compiler" TYPE FILE FILES
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/Compiler/pushpack1.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/Compiler/poppack1.h"
-    "D:/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/Compiler/pstdint.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/Compiler/pushpack1.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/Compiler/poppack1.h"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/code/../include/assimp/Compiler/pstdint.h"
     )
 endif()
 
+string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+       "${CMAKE_INSTALL_MANIFEST_FILES}")
+if(CMAKE_INSTALL_LOCAL_ONLY)
+  file(WRITE "C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/code/install_local_manifest.txt"
+     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+endif()

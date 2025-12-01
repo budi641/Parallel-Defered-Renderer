@@ -1,78 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\context.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\init.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\init.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\input.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\input.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\monitor.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\monitor.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\vulkan.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\vulkan.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\window.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\window.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\win32_init.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\win32_init.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\win32_joystick.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\win32_joystick.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\win32_monitor.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\win32_monitor.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\win32_time.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\win32_time.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\win32_tls.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\win32_tls.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\win32_window.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\win32_window.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\wgl_context.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\wgl_context.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\glfw\src\internal.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\internal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw_config.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw_config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\glfw\include\GLFW\glfw3.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\include\GLFW\glfw3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\glfw\include\GLFW\glfw3native.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\include\GLFW\glfw3native.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\glfw\src\win32_platform.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\win32_platform.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\glfw\src\win32_joystick.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\win32_joystick.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\glfw\src\wgl_context.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\wgl_context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Parallel-Defered-Renderer\api\glfw\src\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{66CCADB7-FBA3-367E-891C-AD0589175F34}</UniqueIdentifier>
+      <UniqueIdentifier>{2B07697E-72EE-3479-BA83-AE15AACBE062}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{CE53746F-AAA1-3517-9960-D7A9558608BB}</UniqueIdentifier>
+      <UniqueIdentifier>{4E4BEA6F-938A-32A0-891E-C947132D50EB}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

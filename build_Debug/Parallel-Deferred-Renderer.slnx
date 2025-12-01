@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Configurations>
+		<BuildType Name="Debug"/>
+		<BuildType Name="Release"/>
+		<BuildType Name="MinSizeRel"/>
+		<BuildType Name="RelWithDebInfo"/>
+		<Platform Name="x64"/>
+	</Configurations>
+	<Project Path="Parallel-Deferred-Renderer.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="4ff5b909-81d8-3e46-ba1a-bf6746b6a544">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="api/assimp/code/assimp.vcxproj"/>
+		<BuildDependency Project="api/glfw/src/glfw.vcxproj"/>
+		<BuildDependency Project="api/assimp/contrib/zlib/zlibstatic.vcxproj"/>
+	</Project>
+	<Project Path="api/assimp/UpdateAssimpLibsDebugSymbolsAndDLLs.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="11232f7c-f7a1-30de-8c10-b470ba2127fc">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="api/assimp/code/assimp.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="c4867a1b-156b-33fd-b887-d9a89ea4d26b">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="api/assimp/contrib/zlib/zlibstatic.vcxproj"/>
+	</Project>
+	<Project Path="api/glfw/uninstall.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="1d794190-275e-335b-9053-4e466b5a562d">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<Build Solution="Debug|*" Project="false"/>
+		<Build Solution="Release|*" Project="false"/>
+		<Build Solution="MinSizeRel|*" Project="false"/>
+		<Build Solution="RelWithDebInfo|*" Project="false"/>
+	</Project>
+	<Project Path="api/assimp/contrib/zlib/zlibstatic.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="3b142a63-0df6-3e13-8d8e-941bfc4069cb">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Folder Name="/CMakePredefinedTargets/">
+		<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="991acc05-b6c7-330c-83dd-ed59098ff9b7" DefaultStartup="true">
+			<BuildDependency Project="Parallel-Deferred-Renderer.vcxproj"/>
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<BuildDependency Project="api/assimp/code/assimp.vcxproj"/>
+			<BuildDependency Project="api/glfw/src/glfw.vcxproj"/>
+			<BuildDependency Project="api/assimp/contrib/zlib/zlibstatic.vcxproj"/>
+		</Project>
+		<Project Path="INSTALL.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="cd0ce9d8-c6c3-329f-9338-2b2173165220">
+			<BuildDependency Project="ALL_BUILD.vcxproj"/>
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<Build Solution="Debug|*" Project="false"/>
+			<Build Solution="Release|*" Project="false"/>
+			<Build Solution="MinSizeRel|*" Project="false"/>
+			<Build Solution="RelWithDebInfo|*" Project="false"/>
+		</Project>
+		<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="a0f2c44b-67af-323e-8a5c-ebabf1169e11"/>
+	</Folder>
+	<Folder Name="/GLFW3/">
+		<Project Path="api/glfw/src/glfw.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="a4d15169-553e-339b-8d26-7fd4a4c5d9a1">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		</Project>
+	</Folder>
+</Solution>

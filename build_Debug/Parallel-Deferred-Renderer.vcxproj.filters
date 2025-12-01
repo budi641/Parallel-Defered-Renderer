@@ -1,170 +1,170 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\src\camera\camera.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\camera\camera.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\src\lighting\light.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\lighting\light.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\src\mesh\mesh.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\mesh\mesh.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\src\mesh\model.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\mesh\model.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\src\renderer\parallel-deferred-renderer.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\renderer\mpi_domain_decomposition.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\src\resources\material.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\renderer\mpi_performance.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\src\resources\shader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\renderer\parallel-deferred-renderer_omp.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\src\resources\shape.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\resources\material.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\src\resources\skybox.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\resources\shader.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\src\resources\texture.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\resources\shape.cpp">
       <Filter>Sources</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glad\src\glad.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\resources\skybox.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\resources\texture.cpp">
+      <Filter>Sources</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glad\src\glad.c">
       <Filter>API</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\imgui\imgui.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\imgui\imgui.cpp">
       <Filter>API</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\imgui\imgui_draw.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\imgui\imgui_draw.cpp">
       <Filter>API</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\imgui\imgui_impl_glfw_gl3.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\imgui\imgui_impl_glfw_gl3.cpp">
       <Filter>API</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\src\camera\camera.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\camera\camera.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\src\lighting\light.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\lighting\light.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\src\mesh\mesh.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\mesh\mesh.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\src\mesh\model.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\mesh\model.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\src\resources\material.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\renderer\mpi_domain_decomposition.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\src\resources\shader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\renderer\mpi_performance.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\src\resources\shape.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\resources\material.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\src\resources\skybox.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\resources\shader.h">
       <Filter>Headers</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\src\resources\texture.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\resources\shape.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\resources\skybox.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\src\resources\texture.h">
       <Filter>Headers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Parallel-Defered-Renderer\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\gBuffer.frag">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\lighting\directional.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\gBuffer.vert">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\lighting\directional.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\latlongToCube.frag">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\lighting\environment.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\latlongToCube.vert">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\lighting\environment.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\lighting\directional.frag">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\lighting\integrateIBL.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\lighting\directional.vert">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\lighting\integrateIBL.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\lighting\environment.frag">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\lighting\irradianceIBL.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\lighting\environment.vert">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\lighting\irradianceIBL.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\lighting\integrateIBL.frag">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\lighting\lightingBRDF.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\lighting\integrateIBL.vert">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\lighting\lightingBRDF.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\lighting\irradianceIBL.frag">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\lighting\point.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\lighting\irradianceIBL.vert">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\lighting\point.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\lighting\lightingBRDF.frag">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\lighting\prefilterIBL.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\lighting\lightingBRDF.vert">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\lighting\prefilterIBL.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\lighting\point.frag">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\lighting\simple.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\lighting\point.vert">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\lighting\simple.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\lighting\prefilterIBL.frag">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\postprocess\firstpass.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\lighting\prefilterIBL.vert">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\postprocess\postprocess.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\lighting\simple.frag">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\postprocess\sao.frag">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\lighting\simple.vert">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\postprocess\sao.vert">
       <Filter>Shaders</Filter>
     </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\postprocess\firstpass.frag">
-      <Filter>Shaders</Filter>
-    </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\postprocess\postprocess.vert">
-      <Filter>Shaders</Filter>
-    </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\postprocess\sao.frag">
-      <Filter>Shaders</Filter>
-    </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\postprocess\sao.vert">
-      <Filter>Shaders</Filter>
-    </None>
-    <None Include="D:\Parallel-Defered-Renderer\resources\shaders\postprocess\saoBlur.frag">
+    <None Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\resources\shaders\postprocess\saoBlur.frag">
       <Filter>Shaders</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="API">
-      <UniqueIdentifier>{6C7D65F7-91C1-3AE3-866C-721B7BF48EE7}</UniqueIdentifier>
+      <UniqueIdentifier>{5906FFD4-1F07-3142-8812-5E420D84FDEE}</UniqueIdentifier>
     </Filter>
     <Filter Include="Headers">
-      <UniqueIdentifier>{4FA276A1-ED27-3312-8F42-41CF4A341421}</UniqueIdentifier>
+      <UniqueIdentifier>{8D7765E7-468C-384B-A672-CD2047C14BDD}</UniqueIdentifier>
     </Filter>
     <Filter Include="Shaders">
-      <UniqueIdentifier>{4FB6E246-95EA-3A20-962A-4E368240F58A}</UniqueIdentifier>
+      <UniqueIdentifier>{6943CCEF-59DD-33E0-A04B-3F7AC29B30A3}</UniqueIdentifier>
     </Filter>
     <Filter Include="Sources">
-      <UniqueIdentifier>{61E1BFA6-13C9-3105-9F0A-8B9B67819CC4}</UniqueIdentifier>
+      <UniqueIdentifier>{162AF4F1-A5AF-33B1-A259-D39B2C350391}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

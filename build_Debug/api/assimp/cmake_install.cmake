@@ -1,4 +1,4 @@
-# Install script for directory: D:/Parallel-Defered-Renderer/api/assimp
+# Install script for directory: C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,19 +34,25 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "libassimp3.2.0-dev" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/assimp-3.2" TYPE FILE FILES
-    "D:/Parallel-Defered-Renderer/build_Debug/api/assimp/assimp-config.cmake"
-    "D:/Parallel-Defered-Renderer/build_Debug/api/assimp/assimp-config-version.cmake"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/assimp-config.cmake"
+    "C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/assimp-config-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "libassimp3.2.0-dev" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "D:/Parallel-Defered-Renderer/build_Debug/api/assimp/assimp.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/assimp.pc")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/Parallel-Defered-Renderer/build_Debug/api/assimp/contrib/zlib/cmake_install.cmake")
-  include("D:/Parallel-Defered-Renderer/build_Debug/api/assimp/code/cmake_install.cmake")
+  include("C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/contrib/zlib/cmake_install.cmake")
+  include("C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/code/cmake_install.cmake")
 
 endif()
 
+string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
+       "${CMAKE_INSTALL_MANIFEST_FILES}")
+if(CMAKE_INSTALL_LOCAL_ONLY)
+  file(WRITE "C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/install_local_manifest.txt"
+     "${CMAKE_INSTALL_MANIFEST_CONTENT}")
+endif()

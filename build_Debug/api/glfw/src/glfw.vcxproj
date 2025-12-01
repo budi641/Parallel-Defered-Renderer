@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{CE7C838E-6766-3FB3-B4A0-6AE5046A2C78}</ProjectGuid>
+    <ProjectGuid>{A4D15169-553E-339B-8D26-7FD4A4C5D9A1}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -33,22 +33,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v145</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -59,37 +59,43 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glfw.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glfw.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glfw.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glfw.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">glfw3</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\api\glfw\include;D:\Parallel-Defered-Renderer\api\glfw\src;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
       </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_GLFW_USE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
@@ -98,10 +104,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_GLFW_USE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\api\glfw\include;D:\Parallel-Defered-Renderer\api\glfw\src;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\api\glfw\include;D:\Parallel-Defered-Renderer\api\glfw\src;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -114,17 +120,23 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\api\glfw\include;D:\Parallel-Defered-Renderer\api\glfw\src;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
       <ExceptionHandling>
       </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GLFW_USE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
@@ -135,10 +147,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GLFW_USE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\api\glfw\include;D:\Parallel-Defered-Renderer\api\glfw\src;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\api\glfw\include;D:\Parallel-Defered-Renderer\api\glfw\src;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -151,17 +163,23 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\api\glfw\include;D:\Parallel-Defered-Renderer\api\glfw\src;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
       <ExceptionHandling>
       </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GLFW_USE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
@@ -172,10 +190,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GLFW_USE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\api\glfw\include;D:\Parallel-Defered-Renderer\api\glfw\src;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\api\glfw\include;D:\Parallel-Defered-Renderer\api\glfw\src;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -188,18 +206,24 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\api\glfw\include;D:\Parallel-Defered-Renderer\api\glfw\src;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
       </ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <MinimalRebuild></MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GLFW_USE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
@@ -208,10 +232,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_GLFW_USE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\api\glfw\include;D:\Parallel-Defered-Renderer\api\glfw\src;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\Parallel-Defered-Renderer\api\glfw\include;D:\Parallel-Defered-Renderer\api\glfw\src;D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -223,11 +247,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Parallel-Defered-Renderer\api\glfw\src\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Parallel-Defered-Renderer/api/glfw/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/glfw/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-file D:/Parallel-Defered-Renderer/build_Debug/api/glfw/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/glfw/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -236,11 +260,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Parallel-Defered-Renderer/api/glfw/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/glfw/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-file D:/Parallel-Defered-Renderer/build_Debug/api/glfw/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/glfw/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -249,11 +273,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Parallel-Defered-Renderer/api/glfw/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/glfw/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-file D:/Parallel-Defered-Renderer/build_Debug/api/glfw/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/glfw/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -262,11 +286,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Parallel-Defered-Renderer/api/glfw/src/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/glfw/src/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel-Defered-Renderer -BD:/Parallel-Defered-Renderer/build_Debug --check-stamp-file D:/Parallel-Defered-Renderer/build_Debug/api/glfw/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/glfw/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -275,35 +299,36 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\context.c" />
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\init.c" />
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\input.c" />
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\monitor.c" />
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\vulkan.c" />
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\window.c" />
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\win32_init.c" />
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\win32_joystick.c" />
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\win32_monitor.c" />
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\win32_time.c" />
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\win32_tls.c" />
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\win32_window.c" />
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\glfw\src\wgl_context.c" />
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\glfw\src\internal.h" />
-    <ClInclude Include="D:\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw_config.h" />
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\glfw\include\GLFW\glfw3.h" />
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\glfw\include\GLFW\glfw3native.h" />
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\glfw\src\win32_platform.h" />
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\glfw\src\win32_joystick.h" />
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\glfw\src\wgl_context.h" />
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\context.c" />
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\init.c" />
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\input.c" />
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\monitor.c" />
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\vulkan.c" />
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\window.c" />
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\win32_init.c" />
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\win32_joystick.c" />
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\win32_monitor.c" />
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\win32_time.c" />
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\win32_tls.c" />
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\win32_window.c" />
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\wgl_context.c" />
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\internal.h" />
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\glfw\src\glfw_config.h" />
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\include\GLFW\glfw3.h" />
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\include\GLFW\glfw3native.h" />
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\win32_platform.h" />
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\win32_joystick.h" />
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\glfw\src\wgl_context.h" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="D:\Parallel-Defered-Renderer\build_Debug\ZERO_CHECK.vcxproj">
-      <Project>{6BFC4548-6EE7-387E-9E10-DF5EFDDF2576}</Project>
+    <ProjectReference Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\ZERO_CHECK.vcxproj">
+      <Project>{A0F2C44B-67AF-323E-8A5C-EBABF1169E11}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

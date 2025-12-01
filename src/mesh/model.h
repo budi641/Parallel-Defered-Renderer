@@ -25,6 +25,7 @@ class Model
         ~Model();
         void loadModel(std::string path);
         void Draw();
+        void clear();
 
     private:
         std::vector<Mesh> meshes;

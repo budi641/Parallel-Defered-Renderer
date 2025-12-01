@@ -1,1431 +1,1431 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Assimp.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Assimp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BaseImporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BaseImporter.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BaseProcess.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BaseProcess.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\PostStepRegistry.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\PostStepRegistry.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ImporterRegistry.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ImporterRegistry.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\DefaultIOStream.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\DefaultIOStream.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\DefaultIOSystem.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\DefaultIOSystem.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Importer.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Importer.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SGSpatialSort.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SGSpatialSort.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\VertexTriangleAdjacency.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\VertexTriangleAdjacency.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SpatialSort.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SpatialSort.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SceneCombiner.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SceneCombiner.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ScenePreprocessor.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ScenePreprocessor.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SkeletonMeshBuilder.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SkeletonMeshBuilder.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SplitByBoneCountProcess.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SplitByBoneCountProcess.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\StandardShapes.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\StandardShapes.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\TargetAnimation.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\TargetAnimation.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\RemoveComments.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\RemoveComments.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Subdivision.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Subdivision.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Bitmap.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Bitmap.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Version.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Version.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\DefaultLogger.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\DefaultLogger.cpp">
       <Filter>Logging</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Exporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Exporter.cpp">
       <Filter>Exporter</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\AssimpCExport.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\AssimpCExport.cpp">
       <Filter>Exporter</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\CalcTangentsProcess.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\CalcTangentsProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ComputeUVMappingProcess.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ComputeUVMappingProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ConvertToLHProcess.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ConvertToLHProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FindDegenerates.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FindDegenerates.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FindInstancesProcess.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FindInstancesProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FindInvalidDataProcess.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FindInvalidDataProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FixNormalsStep.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FixNormalsStep.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\GenFaceNormalsProcess.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\GenFaceNormalsProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\GenVertexNormalsProcess.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\GenVertexNormalsProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\PretransformVertices.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\PretransformVertices.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ImproveCacheLocality.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ImproveCacheLocality.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\JoinVerticesProcess.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\JoinVerticesProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\LimitBoneWeightsProcess.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\LimitBoneWeightsProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\RemoveRedundantMaterials.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\RemoveRedundantMaterials.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\RemoveVCProcess.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\RemoveVCProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SortByPTypeProcess.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SortByPTypeProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SplitLargeMeshes.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SplitLargeMeshes.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\TextureTransform.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\TextureTransform.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\TriangulateProcess.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\TriangulateProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ValidateDataStructure.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ValidateDataStructure.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OptimizeGraph.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OptimizeGraph.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OptimizeMeshes.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OptimizeMeshes.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\DeboneProcess.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\DeboneProcess.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ProcessHelper.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ProcessHelper.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MakeVerboseFormat.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MakeVerboseFormat.cpp">
       <Filter>PostProcessing</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MaterialSystem.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MaterialSystem.cpp">
       <Filter>MaterialSystem</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\StepExporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\StepExporter.cpp">
       <Filter>Step</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\3DSConverter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\3DSConverter.cpp">
       <Filter>3DS</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\3DSLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\3DSLoader.cpp">
       <Filter>3DS</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\3DSExporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\3DSExporter.cpp">
       <Filter>3DS</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ACLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ACLoader.cpp">
       <Filter>AC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ASELoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ASELoader.cpp">
       <Filter>ASE</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ASEParser.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ASEParser.cpp">
       <Filter>ASE</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\AssbinExporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\AssbinExporter.cpp">
       <Filter>ASSBIN</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\AssbinLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\AssbinLoader.cpp">
       <Filter>ASSBIN</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\AssxmlExporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\AssxmlExporter.cpp">
       <Filter>ASSXML</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\B3DImporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\B3DImporter.cpp">
       <Filter>B3D</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BVHLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BVHLoader.cpp">
       <Filter>BVH</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ColladaLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ColladaLoader.cpp">
       <Filter>COLLADA</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ColladaParser.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ColladaParser.cpp">
       <Filter>COLLADA</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ColladaExporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ColladaExporter.cpp">
       <Filter>COLLADA</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\DXFLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\DXFLoader.cpp">
       <Filter>DXF</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\CSMLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\CSMLoader.cpp">
       <Filter>CSM</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\HMPLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\HMPLoader.cpp">
       <Filter>HMP</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IRRLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IRRLoader.cpp">
       <Filter>IRR</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IRRMeshLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IRRMeshLoader.cpp">
       <Filter>IRR</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IRRShared.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IRRShared.cpp">
       <Filter>IRR</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWOAnimation.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\LWOAnimation.cpp">
       <Filter>LWO</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWOBLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\LWOBLoader.cpp">
       <Filter>LWO</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWOLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\LWOLoader.cpp">
       <Filter>LWO</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWOMaterial.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\LWOMaterial.cpp">
       <Filter>LWO</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWSLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\LWSLoader.cpp">
       <Filter>LWS</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD2Loader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MD2Loader.cpp">
       <Filter>MD2</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD3Loader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MD3Loader.cpp">
       <Filter>MD3</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD5Loader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MD5Loader.cpp">
       <Filter>MD5</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD5Parser.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MD5Parser.cpp">
       <Filter>MD5</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDCLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MDCLoader.cpp">
       <Filter>MDC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDLLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MDLLoader.cpp">
       <Filter>MDL</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDLMaterialLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MDLMaterialLoader.cpp">
       <Filter>MDL</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\NFFLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\NFFLoader.cpp">
       <Filter>NFF</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\NDOLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\NDOLoader.cpp">
       <Filter>NDO</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OFFLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OFFLoader.cpp">
       <Filter>OFF</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjFileImporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ObjFileImporter.cpp">
       <Filter>OBJ</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjFileMtlImporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ObjFileMtlImporter.cpp">
       <Filter>OBJ</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjFileParser.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ObjFileParser.cpp">
       <Filter>OBJ</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjExporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ObjExporter.cpp">
       <Filter>OBJ</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreImporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OgreImporter.cpp">
       <Filter>OGRE</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreStructs.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OgreStructs.cpp">
       <Filter>OGRE</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreBinarySerializer.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OgreBinarySerializer.cpp">
       <Filter>OGRE</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreXmlSerializer.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OgreXmlSerializer.cpp">
       <Filter>OGRE</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreMaterial.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OgreMaterial.cpp">
       <Filter>OGRE</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OpenGEXExporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OpenGEXExporter.cpp">
       <Filter>OPENGEX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\OpenGEXImporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OpenGEXImporter.cpp">
       <Filter>OPENGEX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\PlyLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\PlyLoader.cpp">
       <Filter>PLY</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\PlyParser.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\PlyParser.cpp">
       <Filter>PLY</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\PlyExporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\PlyExporter.cpp">
       <Filter>PLY</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\MS3DLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MS3DLoader.cpp">
       <Filter>MS3D</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\COBLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\COBLoader.cpp">
       <Filter>COB</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BlenderLoader.cpp">
       <Filter>BLEND</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderDNA.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BlenderDNA.cpp">
       <Filter>BLEND</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderScene.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BlenderScene.cpp">
       <Filter>BLEND</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderModifier.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BlenderModifier.cpp">
       <Filter>BLEND</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderBMesh.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BlenderBMesh.cpp">
       <Filter>BLEND</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderTessellator.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BlenderTessellator.cpp">
       <Filter>BLEND</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IFCLoader.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCReaderGen.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IFCReaderGen.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCUtil.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IFCUtil.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCGeometry.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IFCGeometry.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCMaterial.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IFCMaterial.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCProfile.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IFCProfile.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCCurve.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IFCCurve.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCBoolean.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IFCBoolean.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCOpenings.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IFCOpenings.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\STEPFileReader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\STEPFileReader.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\STEPFileEncoding.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\STEPFileEncoding.cpp">
       <Filter>IFC</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\XGLLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\XGLLoader.cpp">
       <Filter>XGL</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXImporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXImporter.cpp">
       <Filter>FBX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXParser.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXParser.cpp">
       <Filter>FBX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXTokenizer.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXTokenizer.cpp">
       <Filter>FBX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXConverter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXConverter.cpp">
       <Filter>FBX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXUtil.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXUtil.cpp">
       <Filter>FBX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXDocument.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXDocument.cpp">
       <Filter>FBX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXProperties.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXProperties.cpp">
       <Filter>FBX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXMeshGeometry.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXMeshGeometry.cpp">
       <Filter>FBX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXMaterial.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXMaterial.cpp">
       <Filter>FBX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXModel.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXModel.cpp">
       <Filter>FBX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXAnimation.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXAnimation.cpp">
       <Filter>FBX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXNodeAttribute.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXNodeAttribute.cpp">
       <Filter>FBX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXDeformer.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXDeformer.cpp">
       <Filter>FBX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXBinaryTokenizer.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXBinaryTokenizer.cpp">
       <Filter>FBX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXDocumentUtil.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXDocumentUtil.cpp">
       <Filter>FBX</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3DLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Q3DLoader.cpp">
       <Filter>Q3D</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3BSPFileParser.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Q3BSPFileParser.cpp">
       <Filter>Q3BSP</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3BSPFileImporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Q3BSPFileImporter.cpp">
       <Filter>Q3BSP</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3BSPZipArchive.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Q3BSPZipArchive.cpp">
       <Filter>Q3BSP</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\RawLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\RawLoader.cpp">
       <Filter>RAW</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SIBImporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SIBImporter.cpp">
       <Filter>SIB</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\SMDLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SMDLoader.cpp">
       <Filter>SMD</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\STLLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\STLLoader.cpp">
       <Filter>STL</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\STLExporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\STLExporter.cpp">
       <Filter>STL</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\TerragenLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\TerragenLoader.cpp">
       <Filter>TERRAGEN</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\UnrealLoader.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\UnrealLoader.cpp">
       <Filter>3D</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\XFileImporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\XFileImporter.cpp">
       <Filter>X</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\XFileParser.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\XFileParser.cpp">
       <Filter>X</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\XFileExporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\XFileExporter.cpp">
       <Filter>X</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\glTFImporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\glTFImporter.cpp">
       <Filter>GLTF</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\code\glTFExporter.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\glTFExporter.cpp">
       <Filter>GLTF</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\irrXML.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\irrXML.cpp">
       <Filter>IrrXML</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\ConvertUTF\ConvertUTF.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\ConvertUTF\ConvertUTF.c">
       <Filter>ConvertUTF</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\unzip\ioapi.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\unzip\ioapi.c">
       <Filter>unzip</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\unzip\unzip.c">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\unzip\unzip.c">
       <Filter>unzip</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\common\shapes.cc">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\common\shapes.cc">
       <Filter>Poly2Tri</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\advancing_front.cc">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\advancing_front.cc">
       <Filter>Poly2Tri</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\cdt.cc">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\cdt.cc">
       <Filter>Poly2Tri</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\sweep.cc">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\sweep.cc">
       <Filter>Poly2Tri</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\sweep_context.cc">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\sweep_context.cc">
       <Filter>Poly2Tri</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\clipper\clipper.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\clipper\clipper.cpp">
       <Filter>Clipper</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\code\OpenDDLParser.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\code\OpenDDLParser.cpp">
       <Filter>openddl_parser</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\code\DDLNode.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\code\DDLNode.cpp">
       <Filter>openddl_parser</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\code\OpenDDLCommon.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\code\OpenDDLCommon.cpp">
       <Filter>openddl_parser</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\code\OpenDDLExport.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\code\OpenDDLExport.cpp">
       <Filter>openddl_parser</Filter>
     </ClCompile>
-    <ClCompile Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\code\Value.cpp">
+    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\code\Value.cpp">
       <Filter>openddl_parser</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\fast_atof.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\fast_atof.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\qnan.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\qnan.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BaseImporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BaseImporter.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BaseProcess.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BaseProcess.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Importer.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Importer.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ScenePrivate.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ScenePrivate.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ByteSwapper.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ByteSwapper.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\DefaultProgressHandler.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\DefaultProgressHandler.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\DefaultIOStream.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\DefaultIOStream.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\DefaultIOSystem.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\DefaultIOSystem.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\CInterfaceIOWrapper.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\CInterfaceIOWrapper.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Hash.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Hash.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFF.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IFF.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MemoryIOWrapper.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MemoryIOWrapper.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ParsingUtils.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ParsingUtils.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\StreamReader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\StreamReader.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\StreamWriter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\StreamWriter.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\StringComparison.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\StringComparison.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\StringUtils.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\StringUtils.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SGSpatialSort.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SGSpatialSort.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\VertexTriangleAdjacency.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\VertexTriangleAdjacency.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\GenericProperty.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\GenericProperty.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SpatialSort.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SpatialSort.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SceneCombiner.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SceneCombiner.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ScenePreprocessor.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ScenePreprocessor.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SkeletonMeshBuilder.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SkeletonMeshBuilder.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SplitByBoneCountProcess.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SplitByBoneCountProcess.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SmoothingGroups.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SmoothingGroups.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\StandardShapes.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\StandardShapes.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\TargetAnimation.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\TargetAnimation.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\RemoveComments.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\RemoveComments.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Subdivision.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Subdivision.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Vertex.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Vertex.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\LineSplitter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\LineSplitter.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\TinyFormatter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\TinyFormatter.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Profiler.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Profiler.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\LogAux.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\LogAux.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Bitmap.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Bitmap.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\XMLTools.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\XMLTools.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\DefaultLogger.hpp">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\DefaultLogger.hpp">
       <Filter>Logging</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\LogStream.hpp">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\LogStream.hpp">
       <Filter>Logging</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\Logger.hpp">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\Logger.hpp">
       <Filter>Logging</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\NullLogger.hpp">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\NullLogger.hpp">
       <Filter>Logging</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Win32DebugLogStream.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Win32DebugLogStream.h">
       <Filter>Logging</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FileLogStream.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FileLogStream.h">
       <Filter>Logging</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\StdOStreamLogStream.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\StdOStreamLogStream.h">
       <Filter>Logging</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlobIOSystem.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BlobIOSystem.h">
       <Filter>Exporter</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\CalcTangentsProcess.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\CalcTangentsProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ComputeUVMappingProcess.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ComputeUVMappingProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ConvertToLHProcess.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ConvertToLHProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FindDegenerates.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FindDegenerates.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FindInstancesProcess.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FindInstancesProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FindInvalidDataProcess.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FindInvalidDataProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FixNormalsStep.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FixNormalsStep.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\GenFaceNormalsProcess.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\GenFaceNormalsProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\GenVertexNormalsProcess.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\GenVertexNormalsProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\PretransformVertices.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\PretransformVertices.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ImproveCacheLocality.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ImproveCacheLocality.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\JoinVerticesProcess.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\JoinVerticesProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\LimitBoneWeightsProcess.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\LimitBoneWeightsProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\RemoveRedundantMaterials.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\RemoveRedundantMaterials.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\RemoveVCProcess.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\RemoveVCProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SortByPTypeProcess.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SortByPTypeProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SplitLargeMeshes.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SplitLargeMeshes.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\TextureTransform.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\TextureTransform.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\TriangulateProcess.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\TriangulateProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ValidateDataStructure.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ValidateDataStructure.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OptimizeGraph.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OptimizeGraph.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OptimizeMeshes.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OptimizeMeshes.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\DeboneProcess.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\DeboneProcess.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ProcessHelper.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ProcessHelper.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\PolyTools.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\PolyTools.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MakeVerboseFormat.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MakeVerboseFormat.h">
       <Filter>PostProcessing</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MaterialSystem.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MaterialSystem.h">
       <Filter>MaterialSystem</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\StepExporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\StepExporter.h">
       <Filter>Step</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\3DSHelper.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\3DSHelper.h">
       <Filter>3DS</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\3DSLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\3DSLoader.h">
       <Filter>3DS</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\3DSExporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\3DSExporter.h">
       <Filter>3DS</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ACLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ACLoader.h">
       <Filter>AC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ASELoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ASELoader.h">
       <Filter>ASE</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ASEParser.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ASEParser.h">
       <Filter>ASE</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\AssbinExporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\AssbinExporter.h">
       <Filter>ASSBIN</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\AssbinLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\AssbinLoader.h">
       <Filter>ASSBIN</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\AssxmlExporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\AssxmlExporter.h">
       <Filter>ASSXML</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\B3DImporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\B3DImporter.h">
       <Filter>B3D</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BVHLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BVHLoader.h">
       <Filter>BVH</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ColladaHelper.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ColladaHelper.h">
       <Filter>COLLADA</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ColladaLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ColladaLoader.h">
       <Filter>COLLADA</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ColladaParser.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ColladaParser.h">
       <Filter>COLLADA</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ColladaExporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ColladaExporter.h">
       <Filter>COLLADA</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\DXFLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\DXFLoader.h">
       <Filter>DXF</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\DXFHelper.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\DXFHelper.h">
       <Filter>DXF</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\CSMLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\CSMLoader.h">
       <Filter>CSM</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\HMPFileData.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\HMPFileData.h">
       <Filter>HMP</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\HMPLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\HMPLoader.h">
       <Filter>HMP</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\HalfLifeFileData.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\HalfLifeFileData.h">
       <Filter>HMP</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\IRRLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IRRLoader.h">
       <Filter>IRR</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\IRRMeshLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IRRMeshLoader.h">
       <Filter>IRR</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\IRRShared.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IRRShared.h">
       <Filter>IRR</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWOAnimation.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\LWOAnimation.h">
       <Filter>LWO</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWOFileData.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\LWOFileData.h">
       <Filter>LWO</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWOLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\LWOLoader.h">
       <Filter>LWO</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\LWSLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\LWSLoader.h">
       <Filter>LWS</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD2FileData.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MD2FileData.h">
       <Filter>MD2</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD2Loader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MD2Loader.h">
       <Filter>MD2</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD2NormalTable.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MD2NormalTable.h">
       <Filter>MD2</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD3FileData.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MD3FileData.h">
       <Filter>MD3</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD3Loader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MD3Loader.h">
       <Filter>MD3</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD5Loader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MD5Loader.h">
       <Filter>MD5</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MD5Parser.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MD5Parser.h">
       <Filter>MD5</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDCFileData.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MDCFileData.h">
       <Filter>MDC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDCLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MDCLoader.h">
       <Filter>MDC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDCNormalTable.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MDCNormalTable.h">
       <Filter>MDC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDLDefaultColorMap.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MDLDefaultColorMap.h">
       <Filter>MDL</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDLFileData.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MDLFileData.h">
       <Filter>MDL</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MDLLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MDLLoader.h">
       <Filter>MDL</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\NFFLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\NFFLoader.h">
       <Filter>NFF</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\NDOLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\NDOLoader.h">
       <Filter>NDO</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OFFLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OFFLoader.h">
       <Filter>OFF</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjFileData.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ObjFileData.h">
       <Filter>OBJ</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjFileImporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ObjFileImporter.h">
       <Filter>OBJ</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjFileMtlImporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ObjFileMtlImporter.h">
       <Filter>OBJ</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjFileParser.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ObjFileParser.h">
       <Filter>OBJ</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjTools.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ObjTools.h">
       <Filter>OBJ</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\ObjExporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\ObjExporter.h">
       <Filter>OBJ</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreImporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OgreImporter.h">
       <Filter>OGRE</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreStructs.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OgreStructs.h">
       <Filter>OGRE</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreParsingUtils.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OgreParsingUtils.h">
       <Filter>OGRE</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreBinarySerializer.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OgreBinarySerializer.h">
       <Filter>OGRE</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OgreXmlSerializer.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OgreXmlSerializer.h">
       <Filter>OGRE</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OpenGEXExporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OpenGEXExporter.h">
       <Filter>OPENGEX</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OpenGEXImporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OpenGEXImporter.h">
       <Filter>OPENGEX</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\OpenGEXStructs.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\OpenGEXStructs.h">
       <Filter>OPENGEX</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\PlyLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\PlyLoader.h">
       <Filter>PLY</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\PlyParser.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\PlyParser.h">
       <Filter>PLY</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\PlyExporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\PlyExporter.h">
       <Filter>PLY</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\MS3DLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\MS3DLoader.h">
       <Filter>MS3D</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\COBLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\COBLoader.h">
       <Filter>COB</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\COBScene.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\COBScene.h">
       <Filter>COB</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BlenderLoader.h">
       <Filter>BLEND</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderDNA.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BlenderDNA.h">
       <Filter>BLEND</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderDNA.inl">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BlenderDNA.inl">
       <Filter>BLEND</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderScene.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BlenderScene.h">
       <Filter>BLEND</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderSceneGen.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BlenderSceneGen.h">
       <Filter>BLEND</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderIntermediate.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BlenderIntermediate.h">
       <Filter>BLEND</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderModifier.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BlenderModifier.h">
       <Filter>BLEND</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderBMesh.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BlenderBMesh.h">
       <Filter>BLEND</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\BlenderTessellator.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\BlenderTessellator.h">
       <Filter>BLEND</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IFCLoader.h">
       <Filter>IFC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCReaderGen.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IFCReaderGen.h">
       <Filter>IFC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\IFCUtil.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\IFCUtil.h">
       <Filter>IFC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\STEPFile.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\STEPFile.h">
       <Filter>IFC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\STEPFileReader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\STEPFileReader.h">
       <Filter>IFC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\STEPFileEncoding.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\STEPFileEncoding.h">
       <Filter>IFC</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\XGLLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\XGLLoader.h">
       <Filter>XGL</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXCompileConfig.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXCompileConfig.h">
       <Filter>FBX</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXImporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXImporter.h">
       <Filter>FBX</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXParser.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXParser.h">
       <Filter>FBX</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXTokenizer.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXTokenizer.h">
       <Filter>FBX</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXImportSettings.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXImportSettings.h">
       <Filter>FBX</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXConverter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXConverter.h">
       <Filter>FBX</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXUtil.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXUtil.h">
       <Filter>FBX</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXDocument.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXDocument.h">
       <Filter>FBX</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXProperties.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXProperties.h">
       <Filter>FBX</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\FBXMeshGeometry.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\FBXMeshGeometry.h">
       <Filter>FBX</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3DLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Q3DLoader.h">
       <Filter>Q3D</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3BSPFileData.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Q3BSPFileData.h">
       <Filter>Q3BSP</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3BSPFileParser.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Q3BSPFileParser.h">
       <Filter>Q3BSP</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3BSPFileImporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Q3BSPFileImporter.h">
       <Filter>Q3BSP</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\Q3BSPZipArchive.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\Q3BSPZipArchive.h">
       <Filter>Q3BSP</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\RawLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\RawLoader.h">
       <Filter>RAW</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SIBImporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SIBImporter.h">
       <Filter>SIB</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\SMDLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\SMDLoader.h">
       <Filter>SMD</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\STLLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\STLLoader.h">
       <Filter>STL</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\STLExporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\STLExporter.h">
       <Filter>STL</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\TerragenLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\TerragenLoader.h">
       <Filter>TERRAGEN</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\UnrealLoader.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\UnrealLoader.h">
       <Filter>3D</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\XFileHelper.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\XFileHelper.h">
       <Filter>X</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\XFileImporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\XFileImporter.h">
       <Filter>X</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\XFileParser.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\XFileParser.h">
       <Filter>X</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\XFileExporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\XFileExporter.h">
       <Filter>X</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\glTFAsset.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\glTFAsset.h">
       <Filter>GLTF</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\glTFAsset.inl">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\glTFAsset.inl">
       <Filter>GLTF</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\glTFAssetWriter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\glTFAssetWriter.h">
       <Filter>GLTF</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\glTFAssetWriter.inl">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\glTFAssetWriter.inl">
       <Filter>GLTF</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\glTFImporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\glTFImporter.h">
       <Filter>GLTF</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\glTFExporter.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\glTFExporter.h">
       <Filter>GLTF</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\code\irrXMLWrapper.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\irrXMLWrapper.h">
       <Filter>IrrXML</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\CXMLReaderImpl.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\CXMLReaderImpl.h">
       <Filter>IrrXML</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\heapsort.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\heapsort.h">
       <Filter>IrrXML</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\irrArray.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\irrArray.h">
       <Filter>IrrXML</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\irrString.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\irrString.h">
       <Filter>IrrXML</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\irrTypes.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\irrTypes.h">
       <Filter>IrrXML</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\irrXML.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\irrXML\irrXML.h">
       <Filter>IrrXML</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\ConvertUTF\ConvertUTF.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\ConvertUTF\ConvertUTF.h">
       <Filter>ConvertUTF</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\unzip\crypt.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\unzip\crypt.h">
       <Filter>unzip</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\unzip\ioapi.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\unzip\ioapi.h">
       <Filter>unzip</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\unzip\unzip.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\unzip\unzip.h">
       <Filter>unzip</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\common\shapes.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\common\shapes.h">
       <Filter>Poly2Tri</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\common\utils.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\common\utils.h">
       <Filter>Poly2Tri</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\advancing_front.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\advancing_front.h">
       <Filter>Poly2Tri</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\cdt.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\cdt.h">
       <Filter>Poly2Tri</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\sweep.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\sweep.h">
       <Filter>Poly2Tri</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\sweep_context.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\poly2tri\poly2tri\sweep\sweep_context.h">
       <Filter>Poly2Tri</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\clipper\clipper.hpp">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\clipper\clipper.hpp">
       <Filter>Clipper</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\OpenDDLParser.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\OpenDDLParser.h">
       <Filter>openddl_parser</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\OpenDDLParserUtils.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\OpenDDLParserUtils.h">
       <Filter>openddl_parser</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\OpenDDLCommon.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\OpenDDLCommon.h">
       <Filter>openddl_parser</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\OpenDDLExport.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\OpenDDLExport.h">
       <Filter>openddl_parser</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\DDLNode.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\DDLNode.h">
       <Filter>openddl_parser</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\Value.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\openddlparser\include\openddlparser\Value.h">
       <Filter>openddl_parser</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\anim.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\anim.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\ai_assert.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\ai_assert.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\camera.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\camera.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\color4.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\color4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\color4.inl">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\color4.inl">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\config.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\defs.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\defs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\cfileio.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\cfileio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\light.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\light.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\material.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\material.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\material.inl">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\material.inl">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\matrix3x3.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\matrix3x3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\matrix3x3.inl">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\matrix3x3.inl">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\matrix4x4.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\matrix4x4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\matrix4x4.inl">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\matrix4x4.inl">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\mesh.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\mesh.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\postprocess.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\postprocess.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\quaternion.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\quaternion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\quaternion.inl">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\quaternion.inl">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\scene.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\scene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\metadata.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\metadata.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\texture.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\texture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\types.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\vector2.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\vector2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\vector2.inl">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\vector2.inl">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\vector3.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\vector3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\vector3.inl">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\vector3.inl">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\version.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\version.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\cimport.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\cimport.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\importerdesc.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\importerdesc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\Importer.hpp">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\Importer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\ProgressHandler.hpp">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\ProgressHandler.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\IOStream.hpp">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\IOStream.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\IOSystem.hpp">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\IOSystem.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\cexport.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\cexport.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\Exporter.hpp">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\Exporter.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\Compiler\pushpack1.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\Compiler\pushpack1.h">
       <Filter>Compiler</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\Compiler\poppack1.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\Compiler\poppack1.h">
       <Filter>Compiler</Filter>
     </ClInclude>
-    <ClInclude Include="D:\Parallel-Defered-Renderer\api\assimp\include\assimp\Compiler\pstdint.h">
+    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include\assimp\Compiler\pstdint.h">
       <Filter>Compiler</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\Parallel-Defered-Renderer\api\assimp\code\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\code\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="3D">
-      <UniqueIdentifier>{39AE34E9-4A29-388A-AF72-698F78A3E24E}</UniqueIdentifier>
+      <UniqueIdentifier>{C111F409-2316-34AA-B82B-DC1943D3A08C}</UniqueIdentifier>
     </Filter>
     <Filter Include="3DS">
-      <UniqueIdentifier>{32516C59-780F-38DE-B939-56E6452021F4}</UniqueIdentifier>
+      <UniqueIdentifier>{AA0150DB-C071-3F0D-A3F2-0B86ED160154}</UniqueIdentifier>
     </Filter>
     <Filter Include="AC">
-      <UniqueIdentifier>{27FFB9FD-698F-3809-A52A-8D14B41E0C6C}</UniqueIdentifier>
+      <UniqueIdentifier>{062E8AD0-BBB3-3E8B-ACC6-AD5F4510D160}</UniqueIdentifier>
     </Filter>
     <Filter Include="ASE">
-      <UniqueIdentifier>{6735DE87-08C5-3F38-A51C-C3ED628BC27F}</UniqueIdentifier>
+      <UniqueIdentifier>{EB5646A8-352B-3989-B2A5-B9AD6CA93AB7}</UniqueIdentifier>
     </Filter>
     <Filter Include="ASSBIN">
-      <UniqueIdentifier>{3350B3E0-62E9-3340-B9C6-D8051E1E7AC6}</UniqueIdentifier>
+      <UniqueIdentifier>{A3A38587-C64A-3064-87D3-6A8CC7775561}</UniqueIdentifier>
     </Filter>
     <Filter Include="ASSXML">
-      <UniqueIdentifier>{0478648C-AB4C-39D8-9531-52149EF10EE8}</UniqueIdentifier>
+      <UniqueIdentifier>{F5F605CA-5E42-3FBB-90BB-D5C55D405D1C}</UniqueIdentifier>
     </Filter>
     <Filter Include="B3D">
-      <UniqueIdentifier>{104BE5B1-AD47-3004-AF5A-64F2B7954E38}</UniqueIdentifier>
+      <UniqueIdentifier>{33AA2E39-917B-3A9A-860B-07FADC43795A}</UniqueIdentifier>
     </Filter>
     <Filter Include="BLEND">
-      <UniqueIdentifier>{6C40084A-1B5F-36A2-A344-F86096042882}</UniqueIdentifier>
+      <UniqueIdentifier>{C6DFB90E-5D45-39EC-8532-D1943AA990FD}</UniqueIdentifier>
     </Filter>
     <Filter Include="BVH">
-      <UniqueIdentifier>{3A495537-8466-3902-BEFB-B2F21E62FE2D}</UniqueIdentifier>
+      <UniqueIdentifier>{6315EE5E-01E8-382A-9A12-5FE7762A0938}</UniqueIdentifier>
     </Filter>
     <Filter Include="COB">
-      <UniqueIdentifier>{0B4EE7D0-F846-350A-87C3-1F5EAA524323}</UniqueIdentifier>
+      <UniqueIdentifier>{FEB32F71-2E59-30DA-9023-84A6F56235A1}</UniqueIdentifier>
     </Filter>
     <Filter Include="COLLADA">
-      <UniqueIdentifier>{535BC29C-D0F6-367E-A475-7FF8FA698BF7}</UniqueIdentifier>
+      <UniqueIdentifier>{48BAD567-E1A9-34A9-9562-31DF75DC21DA}</UniqueIdentifier>
     </Filter>
     <Filter Include="CSM">
-      <UniqueIdentifier>{4375665E-61C7-3F3A-B828-01EB97CB15CC}</UniqueIdentifier>
+      <UniqueIdentifier>{A410E88B-09E3-3AA6-A04F-C13361AF1ACE}</UniqueIdentifier>
     </Filter>
     <Filter Include="Clipper">
-      <UniqueIdentifier>{AF7B5EBC-69B6-3014-A661-AB3E53F00B08}</UniqueIdentifier>
+      <UniqueIdentifier>{6D02CBEA-979A-3D91-B412-ECE52F6BB3FB}</UniqueIdentifier>
     </Filter>
     <Filter Include="Common">
-      <UniqueIdentifier>{60CD681A-E181-35BD-95FF-E8E7915355EB}</UniqueIdentifier>
+      <UniqueIdentifier>{C20C32C2-2FF8-3769-B8C9-F833FBA25C89}</UniqueIdentifier>
     </Filter>
     <Filter Include="Compiler">
-      <UniqueIdentifier>{DE965B5C-E9EC-3724-B535-371BA42D8588}</UniqueIdentifier>
+      <UniqueIdentifier>{91D467F4-847D-31F1-9B54-C8A94B11ABBC}</UniqueIdentifier>
     </Filter>
     <Filter Include="ConvertUTF">
-      <UniqueIdentifier>{FC77DFE3-FEF9-3964-BBFA-EB3DEAC7F3EC}</UniqueIdentifier>
+      <UniqueIdentifier>{8C98FC73-04C0-3039-BC41-78EE296BAFE6}</UniqueIdentifier>
     </Filter>
     <Filter Include="DXF">
-      <UniqueIdentifier>{1C0CFDB1-6BBC-3417-958C-8DFB56188A0E}</UniqueIdentifier>
+      <UniqueIdentifier>{CFE8CBB6-ABB9-3763-BBB0-034752577504}</UniqueIdentifier>
     </Filter>
     <Filter Include="Exporter">
-      <UniqueIdentifier>{451F4B3C-CEAD-3F57-BB9B-0618298BD158}</UniqueIdentifier>
+      <UniqueIdentifier>{B9730935-57EE-389B-812E-A7DB526A5A65}</UniqueIdentifier>
     </Filter>
     <Filter Include="FBX">
-      <UniqueIdentifier>{62098326-B6D2-337C-ABD3-99C93BB9F9D7}</UniqueIdentifier>
+      <UniqueIdentifier>{9A4DD6B4-A0B6-3E1B-9853-55F31B8A766D}</UniqueIdentifier>
     </Filter>
     <Filter Include="GLTF">
-      <UniqueIdentifier>{61BBFB97-0317-324B-BA9C-13157D8E759C}</UniqueIdentifier>
+      <UniqueIdentifier>{B410CE21-8835-3510-A3A8-A79BB7A0D57C}</UniqueIdentifier>
     </Filter>
     <Filter Include="HMP">
-      <UniqueIdentifier>{7FA95CAD-48B8-3E1C-A011-849C95C39EA3}</UniqueIdentifier>
+      <UniqueIdentifier>{C59D60AA-79CA-30D1-B5C2-6EF594930097}</UniqueIdentifier>
     </Filter>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{66CCADB7-FBA3-367E-891C-AD0589175F34}</UniqueIdentifier>
+      <UniqueIdentifier>{2B07697E-72EE-3479-BA83-AE15AACBE062}</UniqueIdentifier>
     </Filter>
     <Filter Include="IFC">
-      <UniqueIdentifier>{3384A543-5907-3D32-BA19-FD3BA4467EDD}</UniqueIdentifier>
+      <UniqueIdentifier>{A13B9BE6-B915-3E09-BB31-77A42EA240B0}</UniqueIdentifier>
     </Filter>
     <Filter Include="IRR">
-      <UniqueIdentifier>{1872ED4A-FB16-3EA0-A79D-19479C778C6F}</UniqueIdentifier>
+      <UniqueIdentifier>{A073FD23-8CB3-3015-81F0-831CAEFB0504}</UniqueIdentifier>
     </Filter>
     <Filter Include="IrrXML">
-      <UniqueIdentifier>{53AD4590-CB01-3BEF-B7C0-D6EE5BEB3704}</UniqueIdentifier>
+      <UniqueIdentifier>{ED3B0AB3-74C6-345A-9EE5-40C58F268B26}</UniqueIdentifier>
     </Filter>
     <Filter Include="LWO">
-      <UniqueIdentifier>{226A468D-C852-3167-924A-931649C7CE24}</UniqueIdentifier>
+      <UniqueIdentifier>{9F86E391-9A77-3F8A-B0F9-38EA4CCFD0DE}</UniqueIdentifier>
     </Filter>
     <Filter Include="LWS">
-      <UniqueIdentifier>{7B951104-F3B1-3D52-ACD3-707E3F1D52BB}</UniqueIdentifier>
+      <UniqueIdentifier>{EEC76216-0BC9-3008-81BF-D5F320C6992B}</UniqueIdentifier>
     </Filter>
     <Filter Include="Logging">
-      <UniqueIdentifier>{6A2DDEEE-0ADA-3AE9-968C-1DCAFAB7A532}</UniqueIdentifier>
+      <UniqueIdentifier>{4965C902-1BE2-3AA8-A001-A1A26786DA88}</UniqueIdentifier>
     </Filter>
     <Filter Include="MD2">
-      <UniqueIdentifier>{B052C1D0-D321-35C2-9778-354C1268F1E8}</UniqueIdentifier>
+      <UniqueIdentifier>{EADB295D-174A-340E-8869-0EB7FFDB4D2B}</UniqueIdentifier>
     </Filter>
     <Filter Include="MD3">
-      <UniqueIdentifier>{D9C3FFDB-5A55-3687-A145-1F080BAAD082}</UniqueIdentifier>
+      <UniqueIdentifier>{DB310602-004C-3607-9F56-2253F1B15724}</UniqueIdentifier>
     </Filter>
     <Filter Include="MD5">
-      <UniqueIdentifier>{ADBBD574-9C31-3C06-A6B3-F7999DA55EB6}</UniqueIdentifier>
+      <UniqueIdentifier>{C2D0708C-40A7-3A0F-8D39-7B59247161C1}</UniqueIdentifier>
     </Filter>
     <Filter Include="MDC">
-      <UniqueIdentifier>{A559C167-8340-3B27-A651-3128299A38D8}</UniqueIdentifier>
+      <UniqueIdentifier>{476EB1FE-F7A3-3D00-9D50-9A8F4FB8112B}</UniqueIdentifier>
     </Filter>
     <Filter Include="MDL">
-      <UniqueIdentifier>{F769DB24-B5B8-3F0B-9532-09E627046AD1}</UniqueIdentifier>
+      <UniqueIdentifier>{BDD84D79-ADCB-3E48-A72E-7EF0F8A84858}</UniqueIdentifier>
     </Filter>
     <Filter Include="MS3D">
-      <UniqueIdentifier>{39814651-AE63-3422-B3D3-1AF249E63509}</UniqueIdentifier>
+      <UniqueIdentifier>{A4D6DE86-3E1F-36CC-8758-4864F70AA17C}</UniqueIdentifier>
     </Filter>
     <Filter Include="MaterialSystem">
-      <UniqueIdentifier>{288C4C6C-E7D6-3C5B-B471-175B73682FEF}</UniqueIdentifier>
+      <UniqueIdentifier>{74C9DB7A-692C-391E-9822-A5D332A458D5}</UniqueIdentifier>
     </Filter>
     <Filter Include="NDO">
-      <UniqueIdentifier>{86BA8995-E480-3A60-BCE3-DDAB3865441B}</UniqueIdentifier>
+      <UniqueIdentifier>{AF83231C-F691-3D75-AEA9-380B926B7C5F}</UniqueIdentifier>
     </Filter>
     <Filter Include="NFF">
-      <UniqueIdentifier>{347B0A0B-62E9-3B1B-8129-FEDFB637515F}</UniqueIdentifier>
+      <UniqueIdentifier>{6120183D-D819-36E7-AB3F-EDDD4E7885F4}</UniqueIdentifier>
     </Filter>
     <Filter Include="OBJ">
-      <UniqueIdentifier>{F7ED01D1-3F26-33E6-90CE-1AF1A690AA30}</UniqueIdentifier>
+      <UniqueIdentifier>{F72EAFAC-B4CB-32CB-83DD-E9C3D0C5FBF3}</UniqueIdentifier>
     </Filter>
     <Filter Include="OFF">
-      <UniqueIdentifier>{5E6C6523-1872-3126-85F4-95615FD4ACF4}</UniqueIdentifier>
+      <UniqueIdentifier>{F1213F39-AF3F-32E5-9528-F2730BC25054}</UniqueIdentifier>
     </Filter>
     <Filter Include="OGRE">
-      <UniqueIdentifier>{7EE75DFF-0AD7-3B83-903C-FE833B2FEBDE}</UniqueIdentifier>
+      <UniqueIdentifier>{B0701DFA-604A-36E0-AE5D-1CB85D38263C}</UniqueIdentifier>
     </Filter>
     <Filter Include="OPENGEX">
-      <UniqueIdentifier>{B76F7094-8749-379E-AC3F-778851720FEC}</UniqueIdentifier>
+      <UniqueIdentifier>{80AE4938-7C18-37BB-9E80-916E03CB5F22}</UniqueIdentifier>
     </Filter>
     <Filter Include="PLY">
-      <UniqueIdentifier>{EF04ABA6-C1D6-34C7-A69C-BF7253CE897F}</UniqueIdentifier>
+      <UniqueIdentifier>{3B1EF1D1-E0D4-3F36-8A09-BF99B7AF19AA}</UniqueIdentifier>
     </Filter>
     <Filter Include="Poly2Tri">
-      <UniqueIdentifier>{18FC061A-DA8A-3AEF-B4FD-0F5191DE574F}</UniqueIdentifier>
+      <UniqueIdentifier>{2C97A93D-46C0-3871-9B76-F7E0330AC32B}</UniqueIdentifier>
     </Filter>
     <Filter Include="PostProcessing">
-      <UniqueIdentifier>{61AFF031-322C-3125-AB0E-2BD9FE699866}</UniqueIdentifier>
+      <UniqueIdentifier>{7DC86709-D8A9-3B45-9662-ABB7468DD342}</UniqueIdentifier>
     </Filter>
     <Filter Include="Q3BSP">
-      <UniqueIdentifier>{98CADF46-140F-36F0-B919-792CA8CFDA0B}</UniqueIdentifier>
+      <UniqueIdentifier>{487BC320-37D9-3D2D-A2A0-7A196C6F88D6}</UniqueIdentifier>
     </Filter>
     <Filter Include="Q3D">
-      <UniqueIdentifier>{09A1536B-3594-3914-82CE-AB66BE41838A}</UniqueIdentifier>
+      <UniqueIdentifier>{F9AE71A5-D36F-386E-A3C9-5353798BC6D8}</UniqueIdentifier>
     </Filter>
     <Filter Include="RAW">
-      <UniqueIdentifier>{5FD4BD4E-2F99-3BDD-8271-1C2532D9ECE0}</UniqueIdentifier>
+      <UniqueIdentifier>{FFC9648F-A12D-3C11-BCD0-BA483598791E}</UniqueIdentifier>
     </Filter>
     <Filter Include="SIB">
-      <UniqueIdentifier>{C11B8557-DC3B-3BE7-BCA3-1CDD52409196}</UniqueIdentifier>
+      <UniqueIdentifier>{BA530088-492C-38E0-95E5-D86DD50240A6}</UniqueIdentifier>
     </Filter>
     <Filter Include="SMD">
-      <UniqueIdentifier>{383CC86D-B4C5-339D-8447-7CF4F62E5A95}</UniqueIdentifier>
+      <UniqueIdentifier>{6CE579FD-3A68-36D3-8AB8-D73606D918A8}</UniqueIdentifier>
     </Filter>
     <Filter Include="STL">
-      <UniqueIdentifier>{22018433-789D-3A73-A60B-3A0D9D50470C}</UniqueIdentifier>
+      <UniqueIdentifier>{928FA33C-A444-3B03-848E-C67EF745DA4C}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{CE53746F-AAA1-3517-9960-D7A9558608BB}</UniqueIdentifier>
+      <UniqueIdentifier>{4E4BEA6F-938A-32A0-891E-C947132D50EB}</UniqueIdentifier>
     </Filter>
     <Filter Include="Step">
-      <UniqueIdentifier>{8593EC0B-B3AD-3C9E-97C4-B70B079AAB6F}</UniqueIdentifier>
+      <UniqueIdentifier>{84B505CE-D941-3254-9241-9069889E263A}</UniqueIdentifier>
     </Filter>
     <Filter Include="TERRAGEN">
-      <UniqueIdentifier>{5870BF62-18DB-3A66-9250-E6F906565755}</UniqueIdentifier>
+      <UniqueIdentifier>{96A98ED5-B4CC-32EB-ACA6-76F647BE734A}</UniqueIdentifier>
     </Filter>
     <Filter Include="X">
-      <UniqueIdentifier>{1A6E1CC1-CCA0-30AE-90A6-1EF9CC4C0308}</UniqueIdentifier>
+      <UniqueIdentifier>{A841088F-2145-3545-8496-69984CE65049}</UniqueIdentifier>
     </Filter>
     <Filter Include="XGL">
-      <UniqueIdentifier>{85A3A520-4534-353D-B461-9D695521D449}</UniqueIdentifier>
+      <UniqueIdentifier>{114212A1-95F4-3CF0-8607-25EB6F05CEBD}</UniqueIdentifier>
     </Filter>
     <Filter Include="openddl_parser">
-      <UniqueIdentifier>{A32EFCC2-FDF3-35D0-B596-1185DEBF4AAD}</UniqueIdentifier>
+      <UniqueIdentifier>{92BEF720-2CA4-3F6F-8347-47CD94F563E7}</UniqueIdentifier>
     </Filter>
     <Filter Include="unzip">
-      <UniqueIdentifier>{7690FC80-EFD9-361A-9889-9EAD4707C583}</UniqueIdentifier>
+      <UniqueIdentifier>{CDE9B932-5411-3FC3-9618-2FBD90A6B2BC}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

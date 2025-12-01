@@ -8,6 +8,8 @@
 #include "light.h"
 #include "skybox.h"
 #include "material.h"
+#include "mpi_domain_decomposition.h"
+#include "mpi_performance.h"
 
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
@@ -89,6 +91,18 @@ GLfloat deltaPostprocessTime = 0.0f;
 GLfloat deltaForwardTime = 0.0f;
 GLfloat deltaGUITime = 0.0f;
 GLfloat materialRoughness = 0.01f;
+
+// MPI Performance Testing
+#ifdef HAVE_MPI
+MPI_Comm mpiComm = MPI_COMM_WORLD;
+bool mpiInitialized = false;
+std::vector<MPIPerformance::LatencyResult> latencyResults;
+std::vector<MPIPerformance::BandwidthResult> bandwidthResults;
+std::vector<MPIPerformance::ScalingResult> strongScalingResults;
+std::vector<MPIPerformance::ScalingResult> weakScalingResults;
+bool mpiPerformanceTestRunning = false;
+std::string mpiPerformanceStatus = "Ready";
+#endif
 GLfloat materialMetallicity = 0.02f;
 GLfloat ambientIntensity = 0.005f;
 GLfloat saoRadius = 0.3f;
@@ -127,7 +141,7 @@ glm::vec3 lightDirectionalDirection1 = glm::vec3(-0.2f, -1.0f, -0.3f);
 glm::vec3 lightDirectionalColor1 = glm::vec3(1.0f);
 glm::vec3 modelPosition = glm::vec3(0.0f);
 glm::vec3 modelRotationAxis = glm::vec3(0.0f, 1.0f, 0.0f);
-glm::vec3 modelScale = glm::vec3(0.1f);
+glm::vec3 modelScale = glm::vec3(1.0f);
 
 glm::mat4 projViewModel;
 glm::mat4 prevProjViewModel = projViewModel;
@@ -185,9 +199,22 @@ unsigned int queryIDPostprocess[2];
 unsigned int queryIDForward[2];
 unsigned int queryIDGUI[2];
 
-int main(int /*argc*/, char* /*argv*/[])
+int main(int argc, char* argv[])
 {
+#ifdef HAVE_MPI
+    // Initialize MPI
+    int provided;
+    MPI_Init_thread(&argc, &argv, MPI_THREAD_FUNNELED, &provided);
+    mpiComm = MPI_COMM_WORLD;
+    mpiInitialized = true;
+    int mpiRank, mpiSize;
+    MPI_Comm_rank(mpiComm, &mpiRank);
+    MPI_Comm_size(mpiComm, &mpiSize);
+    std::cout << "Running with " << omp_get_max_threads() << " OpenMP threads and " 
+              << mpiSize << " MPI ranks (rank " << mpiRank << ")\n";
+#else
     std::cout << "Running with " << omp_get_max_threads() << " OpenMP threads\n";
+#endif
     double startTotal = omp_get_wtime();
     glfwInit();
 
@@ -450,6 +477,12 @@ int main(int /*argc*/, char* /*argv*/[])
     //---------
     ImGui_ImplGlfwGL3_Shutdown();
     glfwTerminate();
+    
+#ifdef HAVE_MPI
+    if (mpiInitialized) {
+        MPI_Finalize();
+    }
+#endif
 
     double endTotal = omp_get_wtime();
     double T_P = endTotal - startTotal;
@@ -552,42 +585,39 @@ void renderLightingPass() {
     glm::mat4 inverseView;
     glm::mat4 inverseProj;
     
-    // ✅ FIXED: Proper parallelization without nesting
+    // ✅ FIXED: Proper parallelization without nesting (using sections for MSVC compatibility)
     //double startParallel = omp_get_wtime();
     
-    #pragma omp parallel
+    #pragma omp parallel sections
     {
-        #pragma omp single nowait
+        #pragma omp section
         {
-            #pragma omp task
-            {
-                inverseView = glm::transpose(view);
+            inverseView = glm::transpose(view);
+        }
+        
+        #pragma omp section
+        {
+            inverseProj = glm::inverse(projection);
+        }
+        
+        #pragma omp section
+        {
+            // Update point lights
+            for (size_t i = 0; i < Light::lightPointList.size(); ++i) {
+                Light& L = Light::lightPointList[i];
+                L.setLightPosition(L.getLightPosition());
+                L.setLightColor(L.getLightColor());
+                L.setLightRadius(L.getLightRadius());
             }
-            
-            #pragma omp task
-            {
-                inverseProj = glm::inverse(projection);
-            }
-            
-            #pragma omp task
-            {
-                // Update point lights
-                for (size_t i = 0; i < Light::lightPointList.size(); ++i) {
-                    Light& L = Light::lightPointList[i];
-                    L.setLightPosition(L.getLightPosition());
-                    L.setLightColor(L.getLightColor());
-                    L.setLightRadius(L.getLightRadius());
-                }
-            }
-            
-            #pragma omp task
-            {
-                // Update directional lights
-                for (size_t i = 0; i < Light::lightDirectionalList.size(); ++i) {
-                    Light& L = Light::lightDirectionalList[i];
-                    L.setLightDirection(L.getLightDirection());
-                    L.setLightColor(L.getLightColor());
-                }
+        }
+        
+        #pragma omp section
+        {
+            // Update directional lights
+            for (size_t i = 0; i < Light::lightDirectionalList.size(); ++i) {
+                Light& L = Light::lightDirectionalList[i];
+                L.setLightDirection(L.getLightDirection());
+                L.setLightColor(L.getLightColor());
             }
         }
     }
@@ -1016,25 +1046,18 @@ void imGuiSetup()
 
             if (ImGui::TreeNode("Model"))
             {
-                if (ImGui::Button("Sphere"))
-                {
-                    objectModel.~Model();
-                    objectModel.loadModel("resources/models/sphere/sphere.obj");
-                    modelScale = glm::vec3(0.6f);
-                }
-
                 if (ImGui::Button("Teapot"))
                 {
-                    objectModel.~Model();
+                    objectModel.clear();
                     objectModel.loadModel("resources/models/teapot/teapot.obj");
                     modelScale = glm::vec3(0.6f);
                 }
 
                 if (ImGui::Button("Shader ball"))
                 {
-                    objectModel.~Model();
+                    objectModel.clear();
                     objectModel.loadModel("resources/models/shaderball/shaderball.obj");
-                    modelScale = glm::vec3(0.1f);
+                    modelScale = glm::vec3(1.0f);
                 }
 
                 ImGui::TreePop();
@@ -1092,6 +1115,185 @@ void imGuiSetup()
         ImGui::Text("GUI Pass :         %.4f ms", deltaGUITime);
     }
 
+#ifdef HAVE_MPI
+    if (ImGui::CollapsingHeader("MPI Performance", 0, true, true))
+    {
+        int mpiRank = 0, mpiSize = 1;
+        MPI_Comm_rank(mpiComm, &mpiRank);
+        MPI_Comm_size(mpiComm, &mpiSize);
+        
+        ImGui::Text("MPI Rank: %d / %d", mpiRank, mpiSize);
+        ImGui::Text("Status: %s", mpiPerformanceStatus.c_str());
+        ImGui::Separator();
+
+        if (ImGui::TreeNode("Latency & Bandwidth"))
+        {
+            if (ImGui::Button("Measure Latency") && !mpiPerformanceTestRunning && mpiSize >= 2)
+            {
+                mpiPerformanceTestRunning = true;
+                mpiPerformanceStatus = "Measuring latency...";
+                
+                std::vector<int> sizes;
+                for (int i = 0; i <= 10; ++i) {
+                    sizes.push_back(1 << i); // 1, 2, 4, ..., 1024 bytes
+                }
+                
+                latencyResults = MPIPerformance::measureLatency(mpiComm, sizes, 1000);
+                mpiPerformanceStatus = "Latency measurement complete";
+                mpiPerformanceTestRunning = false;
+            }
+            
+            if (ImGui::Button("Measure Bandwidth") && !mpiPerformanceTestRunning && mpiSize >= 2)
+            {
+                mpiPerformanceTestRunning = true;
+                mpiPerformanceStatus = "Measuring bandwidth...";
+                
+                std::vector<int> sizes = {
+                    1024, 10240, 102400, 1048576, 5242880, 10485760
+                };
+                
+                bandwidthResults = MPIPerformance::measureBandwidth(mpiComm, sizes, 100);
+                mpiPerformanceStatus = "Bandwidth measurement complete";
+                mpiPerformanceTestRunning = false;
+            }
+            
+            if (latencyResults.size() > 0)
+            {
+                ImGui::Text("\nLatency Results:");
+                ImGui::Text("Size (bytes) | Latency (μs)");
+                ImGui::Separator();
+                for (const auto& r : latencyResults) {
+                    ImGui::Text("%d | %.2f", r.messageSize, r.latency);
+                }
+            }
+            
+            if (bandwidthResults.size() > 0)
+            {
+                ImGui::Text("\nBandwidth Results:");
+                ImGui::Text("Size (bytes) | Bandwidth (MB/s)");
+                ImGui::Separator();
+                for (const auto& r : bandwidthResults) {
+                    ImGui::Text("%d | %.2f", r.messageSize, r.bandwidth);
+                }
+            }
+            
+            ImGui::TreePop();
+        }
+
+        if (ImGui::TreeNode("Strong Scaling"))
+        {
+            static int strongScalingProblemSize = 1000;
+            ImGui::InputInt("Problem Size", &strongScalingProblemSize);
+            
+            if (ImGui::Button("Run Strong Scaling") && !mpiPerformanceTestRunning)
+            {
+                mpiPerformanceTestRunning = true;
+                mpiPerformanceStatus = "Running strong scaling test...";
+                
+                std::vector<int> processorCounts;
+                for (int i = 1; i <= mpiSize; i *= 2) {
+                    processorCounts.push_back(i);
+                }
+                if (processorCounts.back() != mpiSize) {
+                    processorCounts.push_back(mpiSize);
+                }
+                
+                // Work function that simulates rendering computation
+                auto workFunc = [](int problemSize) -> double {
+                    double sum = 0.0;
+                    for (int i = 0; i < problemSize; ++i) {
+                        for (int j = 0; j < problemSize; ++j) {
+                            sum += std::sin(i * 0.1) * std::cos(j * 0.1);
+                        }
+                    }
+                    return sum;
+                };
+                
+                strongScalingResults = MPIPerformance::measureStrongScaling(
+                    mpiComm, workFunc, strongScalingProblemSize, processorCounts
+                );
+                mpiPerformanceStatus = "Strong scaling test complete";
+                mpiPerformanceTestRunning = false;
+            }
+            
+            if (strongScalingResults.size() > 0)
+            {
+                ImGui::Text("\nStrong Scaling Results:");
+                ImGui::Text("Processors | Time (s) | Speedup | Efficiency");
+                ImGui::Separator();
+                for (const auto& r : strongScalingResults) {
+                    ImGui::Text("%d | %.4f | %.2f | %.2f", 
+                        r.numRanks, r.executionTime, r.speedup, r.efficiency);
+                }
+            }
+            
+            ImGui::TreePop();
+        }
+
+        if (ImGui::TreeNode("Weak Scaling"))
+        {
+            static int weakScalingBaseSize = 500;
+            ImGui::InputInt("Base Problem Size", &weakScalingBaseSize);
+            
+            if (ImGui::Button("Run Weak Scaling") && !mpiPerformanceTestRunning)
+            {
+                mpiPerformanceTestRunning = true;
+                mpiPerformanceStatus = "Running weak scaling test...";
+                
+                std::vector<int> processorCounts;
+                for (int i = 1; i <= mpiSize; i *= 2) {
+                    processorCounts.push_back(i);
+                }
+                if (processorCounts.back() != mpiSize) {
+                    processorCounts.push_back(mpiSize);
+                }
+                
+                // Work function that simulates rendering computation
+                auto workFunc = [](int problemSize) -> double {
+                    double sum = 0.0;
+                    for (int i = 0; i < problemSize; ++i) {
+                        for (int j = 0; j < problemSize; ++j) {
+                            sum += std::sin(i * 0.1) * std::cos(j * 0.1);
+                        }
+                    }
+                    return sum;
+                };
+                
+                weakScalingResults = MPIPerformance::measureWeakScaling(
+                    mpiComm, workFunc, weakScalingBaseSize, processorCounts
+                );
+                mpiPerformanceStatus = "Weak scaling test complete";
+                mpiPerformanceTestRunning = false;
+            }
+            
+            if (weakScalingResults.size() > 0)
+            {
+                ImGui::Text("\nWeak Scaling Results:");
+                ImGui::Text("Processors | Time (s) | Speedup | Efficiency");
+                ImGui::Separator();
+                for (const auto& r : weakScalingResults) {
+                    ImGui::Text("%d | %.4f | %.2f | %.2f", 
+                        r.numRanks, r.executionTime, r.speedup, r.efficiency);
+                }
+            }
+            
+            ImGui::TreePop();
+        }
+
+        if (ImGui::Button("Export All Results to CSV"))
+        {
+            MPIPerformance::exportToCSV(
+                "mpi_performance_results.csv",
+                latencyResults,
+                bandwidthResults,
+                strongScalingResults,
+                weakScalingResults
+            );
+            mpiPerformanceStatus = "Results exported to CSV";
+        }
+    }
+#endif
+
     if (ImGui::CollapsingHeader("Application Info", 0, true, true))
     {
         char* glInfos = (char*)glGetString(GL_VERSION);
@@ -1103,12 +1305,23 @@ void imGuiSetup()
         ImGui::Text(hardwareInfos);
         ImGui::Text("\nFramerate %.2f FPS / Frametime %.4f ms", ImGui::GetIO().Framerate, 1000.0f / ImGui::GetIO().Framerate);
         ImGui::Text("OpenMP Threads: %d", omp_get_max_threads());
+#ifdef HAVE_MPI
+        int mpiRank = 0, mpiSize = 1;
+        MPI_Comm_rank(mpiComm, &mpiRank);
+        MPI_Comm_size(mpiComm, &mpiSize);
+        ImGui::Text("MPI: Rank %d / %d", mpiRank, mpiSize);
+#endif
     }
 
     if (ImGui::CollapsingHeader("About", 0, true, true))
     {
         ImGui::Text("Parallel-Deferred-Renderer");
         ImGui::Text("Optimized with OpenMP");
+#ifdef HAVE_MPI
+        ImGui::Text("MPI Support: Enabled");
+#else
+        ImGui::Text("MPI Support: Disabled");
+#endif
     }
 
     ImGui::End();
