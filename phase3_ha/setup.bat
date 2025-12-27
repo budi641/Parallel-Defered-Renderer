@@ -1,45 +1,60 @@
 @echo off
-REM Phase 3: High Availability Rendering Service
-REM Setup Script for Windows
+REM ============================================================
+REM Phase 3: Fault-Tolerant Distributed Renderer - Setup Script
+REM ============================================================
+REM This script sets up the Python environment and dependencies
 
+echo.
 echo ============================================================
-echo Phase 3: High Availability Setup
+echo   Phase 3 Setup Script
 echo ============================================================
 echo.
 
-REM Check Python
+REM Check Python installation
 python --version >nul 2>&1
 if errorlevel 1 (
-    echo ERROR: Python not found. Please install Python 3.8+
+    echo [ERROR] Python is not installed or not in PATH
+    echo Please install Python 3.10+ from https://python.org
+    pause
     exit /b 1
 )
 
-echo [1/4] Creating virtual environment...
-if not exist "venv" (
-    python -m venv venv
-)
+echo [OK] Python found
+python --version
 
-echo [2/4] Activating virtual environment...
-call venv\Scripts\activate.bat
+REM Navigate to phase3_ha directory
+cd /d "%~dp0"
 
-echo [3/4] Installing dependencies...
-pip install --upgrade pip
+REM Install dependencies
+echo.
+echo [INFO] Installing Python dependencies...
 pip install -r requirements.txt
 
-echo [4/4] Generating Protocol Buffer code...
-python generate_proto.py
+if errorlevel 1 (
+    echo [ERROR] Failed to install dependencies
+    pause
+    exit /b 1
+)
 
 echo.
+echo [OK] Dependencies installed successfully!
+echo.
 echo ============================================================
-echo Setup complete!
+echo   Setup Complete! Available Commands:
 echo ============================================================
 echo.
-echo To run the demo:
-echo   1. Activate environment: venv\Scripts\activate.bat
-echo   2. Run demo: python demo.py
+echo   1. Run HA Demo (2 replicas + failover test):
+echo      python demo_native_ha.py
 echo.
-echo Or use the run scripts:
-echo   - run_demo.bat          (standard demo)
-echo   - run_demo_extended.bat (extended with more faults)
-echo   - run_spark_demo.bat    (with Spark streaming)
+echo   2. Run Performance Analysis (120 seconds):
+echo      python performance_analysis.py --duration 120 --rate 30
 echo.
+echo   3. Run Spark Streaming:
+echo      python grpc_spark_streaming.py
+echo.
+echo   4. Generate PDF Report:
+echo      python generate_report_pdf.py
+echo.
+echo ============================================================
+echo.
+pause

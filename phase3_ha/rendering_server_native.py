@@ -78,8 +78,11 @@ class NativeRenderer:
                 logger.error(f"Renderer not found: {self.renderer_path}")
                 return
             
-            # Get the directory containing the renderer for working directory
-            renderer_dir = os.path.dirname(os.path.dirname(self.renderer_path))
+            # Get the project root directory where resources (shaders, models, textures) are located
+            # Path: build_Debug/Debug/Renderer.exe -> need to go up to project root
+            renderer_dir = os.path.dirname(self.renderer_path)  # Debug/
+            renderer_dir = os.path.dirname(renderer_dir)  # build_Debug/
+            renderer_dir = os.path.dirname(renderer_dir)  # project root
             
             logger.info(f"[{self.replica_id}] Starting native renderer: {self.renderer_path}")
             logger.info(f"[{self.replica_id}] Working directory: {renderer_dir}")

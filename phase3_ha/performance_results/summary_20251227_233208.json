@@ -1,0 +1,19 @@
+{
+  "total_requests": 3438,
+  "successful_requests": 3411,
+  "failed_requests": 27,
+  "success_rate_percent": 99.21465968586386,
+  "duration_seconds": 119.9704258441925,
+  "overall_throughput_rps": 28.657062570278654,
+  "total_failures": 1,
+  "avg_latency_ms": 1.7483859284467202,
+  "min_latency_ms": 0.0,
+  "max_latency_ms": 204.5292854309082,
+  "p50_latency_ms": 1.5106201171875,
+  "p95_latency_ms": 2.063274383544922,
+  "p99_latency_ms": 10.512828826904297,
+  "stddev_latency_ms": 5.060197104434445,
+  "avg_recovery_time_seconds": 0.03419947624206543,
+  "min_recovery_time_seconds": 0.03419947624206543,
+  "max_recovery_time_seconds": 0.03419947624206543
+}

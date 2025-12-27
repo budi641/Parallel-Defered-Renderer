@@ -57,13 +57,26 @@ class RenderingClient:
     
     def __init__(
         self,
-        replicas: List[ReplicaEndpoint],
+        replicas: List[ReplicaEndpoint] | List[str],
         timeout: float = 10.0,
         max_retries: int = 3,
         initial_retry_delay: float = 0.5,
         max_retry_delay: float = 5.0
     ):
-        self.replicas = sorted(replicas, key=lambda r: r.priority)
+        # Convert string addresses to ReplicaEndpoint objects
+        converted_replicas: List[ReplicaEndpoint] = []
+        for i, replica in enumerate(replicas):
+            if isinstance(replica, str):
+                # Parse "host:port" string
+                if ':' in replica:
+                    host, port = replica.rsplit(':', 1)
+                    converted_replicas.append(ReplicaEndpoint(host=host, port=int(port), priority=i))
+                else:
+                    converted_replicas.append(ReplicaEndpoint(host=replica, port=50051, priority=i))
+            else:
+                converted_replicas.append(replica)
+        
+        self.replicas = sorted(converted_replicas, key=lambda r: r.priority)
         self.timeout = timeout
         self.max_retries = max_retries
         self.initial_retry_delay = initial_retry_delay
