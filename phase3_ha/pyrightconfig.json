@@ -1,0 +1,9 @@
+{
+    "include": ["*.py"],
+    "exclude": ["venv/**", "__pycache__/**"],
+    "ignore": ["spark_streaming.py"],
+    "reportMissingImports": "warning",
+    "reportMissingModuleSource": "warning",
+    "pythonVersion": "3.8",
+    "typeCheckingMode": "basic"
+}

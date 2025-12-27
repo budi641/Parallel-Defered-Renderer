@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/glfw/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: \"C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/glfw/install_manifest.txt\"")
+if (NOT EXISTS "C:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/build_Debug/api/glfw/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: \"C:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/build_Debug/api/glfw/install_manifest.txt\"")
 endif()
 
-file(READ "C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/glfw/install_manifest.txt" files)
+file(READ "C:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/build_Debug/api/glfw/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

@@ -1,6 +1,6 @@
-^C:\USERS\AAMEE\DOCUMENTS\PARALLEL-DEFERED-RENDERER\API\GLFW\SRC\CMAKELISTS.TXT
+^C:\PROGRAMMING\SIDE-PROJECTS\PARALLEL-PROJECT\PARALLEL-DEFERED-RENDERER\API\GLFW\SRC\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/glfw/src/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer -BC:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/build_Debug/api/glfw/src/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

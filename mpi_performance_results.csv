@@ -1,0 +1,13 @@
+Latency Results
+Message Size (bytes),Latency (us),Round-Trip Time (us)
+
+Bandwidth Results
+Message Size (bytes),Bandwidth (MB/s),Transfer Time (us)
+
+Strong Scaling Results
+Processors,Execution Time (s),Speedup,Efficiency
+1,0.0860497,1,1
+
+Weak Scaling Results
+Processors,Execution Time (s),Speedup,Efficiency
+1,0.0124464,1,1

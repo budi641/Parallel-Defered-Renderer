@@ -1,0 +1,173 @@
+// Protocol Buffer definition for the Parallel Deferred Renderer gRPC service
+// Phase 3: Resilience & High-Availability Integration
+
+syntax = "proto3";
+
+package rendering;
+
+// The rendering service definition
+service RenderingService {
+    // Render a single frame with given parameters
+    rpc RenderFrame(RenderRequest) returns (RenderResponse);
+    
+    // Stream multiple frames continuously
+    rpc StreamFrames(stream RenderRequest) returns (stream RenderResponse);
+    
+    // Health check for replica management
+    rpc HealthCheck(HealthCheckRequest) returns (HealthCheckResponse);
+    
+    // Get current rendering statistics
+    rpc GetStats(StatsRequest) returns (StatsResponse);
+}
+
+// Camera parameters for rendering
+message CameraParams {
+    float position_x = 1;
+    float position_y = 2;
+    float position_z = 3;
+    float yaw = 4;
+    float pitch = 5;
+    float fov = 6;
+    float aperture = 7;
+    float shutter_speed = 8;
+    float iso = 9;
+}
+
+// Lighting parameters
+message LightParams {
+    float point1_x = 1;
+    float point1_y = 2;
+    float point1_z = 3;
+    float point1_radius = 4;
+    float point2_x = 5;
+    float point2_y = 6;
+    float point2_z = 7;
+    float point2_radius = 8;
+    float point3_x = 9;
+    float point3_y = 10;
+    float point3_z = 11;
+    float point3_radius = 12;
+    bool point_mode = 13;
+    bool directional_mode = 14;
+    bool ibl_mode = 15;
+}
+
+// Material parameters
+message MaterialParams {
+    float roughness = 1;
+    float metallicity = 2;
+    float f0_r = 3;
+    float f0_g = 4;
+    float f0_b = 5;
+}
+
+// Post-processing parameters
+message PostProcessParams {
+    bool sao_mode = 1;
+    int32 sao_samples = 2;
+    float sao_radius = 3;
+    bool fxaa_mode = 4;
+    bool motion_blur_mode = 5;
+    int32 tonemapping_mode = 6;
+}
+
+// Model transformation
+message ModelTransform {
+    float position_x = 1;
+    float position_y = 2;
+    float position_z = 3;
+    float rotation_angle = 4;
+    float rotation_axis_x = 5;
+    float rotation_axis_y = 6;
+    float rotation_axis_z = 7;
+    float scale_x = 8;
+    float scale_y = 9;
+    float scale_z = 10;
+}
+
+// Request for rendering a frame
+message RenderRequest {
+    int64 request_id = 1;
+    int64 timestamp = 2;
+    int32 frame_number = 3;
+    int32 width = 4;
+    int32 height = 5;
+    
+    CameraParams camera = 6;
+    LightParams lighting = 7;
+    MaterialParams material = 8;
+    PostProcessParams post_process = 9;
+    ModelTransform model_transform = 10;
+    
+    // For continuous streaming
+    bool is_streaming = 11;
+    float delta_time = 12;
+}
+
+// Response containing rendered frame data
+message RenderResponse {
+    int64 request_id = 1;
+    int64 timestamp_received = 2;
+    int64 timestamp_completed = 3;
+    int32 frame_number = 4;
+    
+    // Frame data (could be raw pixels or encoded)
+    bytes frame_data = 5;
+    int32 width = 6;
+    int32 height = 7;
+    string encoding = 8;  // "raw", "png", "jpeg"
+    
+    // Performance metrics
+    float geometry_time_ms = 9;
+    float lighting_time_ms = 10;
+    float postprocess_time_ms = 11;
+    float total_time_ms = 12;
+    
+    // Status
+    bool success = 13;
+    string error_message = 14;
+    string replica_id = 15;
+}
+
+// Health check request
+message HealthCheckRequest {
+    string client_id = 1;
+}
+
+// Health check response
+message HealthCheckResponse {
+    bool healthy = 1;
+    string replica_id = 2;
+    int64 uptime_seconds = 3;
+    int32 frames_rendered = 4;
+    float avg_latency_ms = 5;
+    float load_percentage = 6;
+}
+
+// Stats request
+message StatsRequest {
+    string client_id = 1;
+    bool include_history = 2;
+}
+
+// Stats response
+message StatsResponse {
+    string replica_id = 1;
+    int32 total_frames_rendered = 2;
+    float avg_frame_time_ms = 3;
+    float min_frame_time_ms = 4;
+    float max_frame_time_ms = 5;
+    float p95_latency_ms = 6;
+    float p99_latency_ms = 7;
+    float throughput_fps = 8;
+    int64 uptime_seconds = 9;
+    repeated FrameMetric frame_history = 10;
+}
+
+// Individual frame metric for history
+message FrameMetric {
+    int64 timestamp = 1;
+    int32 frame_number = 2;
+    float latency_ms = 3;
+    bool success = 4;
+}

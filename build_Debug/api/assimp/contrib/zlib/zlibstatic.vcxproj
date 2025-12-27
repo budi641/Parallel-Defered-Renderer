@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <PreferredToolArchitecture>x64</PreferredToolArchitecture>
   </PropertyGroup>
@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{3B142A63-0DF6-3E13-8D8E-941BFC4069CB}</ProjectGuid>
+    <ProjectGuid>{35904E8F-8EAC-3962-90D3-B3413DC48F29}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -33,22 +33,22 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v145</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v145</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v145</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
-    <PlatformToolset>v145</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -59,56 +59,48 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">zlibstatic.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">zlibstaticd</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">zlibstatic.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">zlibstatic</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">zlibstatic.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">zlibstatic</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">zlibstatic.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">zlibstatic</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft SDKs\MPI\Include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <BufferSecurityCheck></BufferSecurityCheck>
-      <CallingConvention></CallingConvention>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
       </ExceptionHandling>
-      <FloatingPointModel></FloatingPointModel>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;HAVE_MPI;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;HAVE_MPI;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft SDKs\MPI\Include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft SDKs\MPI\Include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -121,38 +113,29 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft SDKs\MPI\Include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <BufferSecurityCheck></BufferSecurityCheck>
-      <CallingConvention></CallingConvention>
       <ExceptionHandling>
       </ExceptionHandling>
-      <FloatingPointModel></FloatingPointModel>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_MPI;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_MPI;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft SDKs\MPI\Include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft SDKs\MPI\Include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -165,38 +148,29 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft SDKs\MPI\Include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <BufferSecurityCheck></BufferSecurityCheck>
-      <CallingConvention></CallingConvention>
       <ExceptionHandling>
       </ExceptionHandling>
-      <FloatingPointModel></FloatingPointModel>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>MinSpace</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_MPI;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_MPI;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft SDKs\MPI\Include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft SDKs\MPI\Include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -209,37 +183,28 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft SDKs\MPI\Include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
-      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <BufferSecurityCheck></BufferSecurityCheck>
-      <CallingConvention></CallingConvention>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
       </ExceptionHandling>
-      <FloatingPointModel></FloatingPointModel>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <MinimalRebuild></MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_MPI;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;HAVE_MPI;OPENDDL_NO_USE_CPP11;NO_FSEEKO;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft SDKs\MPI\Include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\include;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\Users\aamee\Documents\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Microsoft SDKs\MPI\Include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\include;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -251,11 +216,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\CMakeLists.txt">
+    <CustomBuild Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/contrib/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/api/assimp/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer -BC:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/build_Debug/api/assimp/contrib/zlib/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -263,12 +228,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zconf.h.cmakein;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckTypeSize.cmake;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zconf.h.cmakein;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/contrib/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/api/assimp/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer -BC:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/build_Debug/api/assimp/contrib/zlib/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -276,12 +241,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zconf.h.cmakein;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckTypeSize.cmake;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zconf.h.cmakein;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/contrib/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/api/assimp/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer -BC:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/build_Debug/api/assimp/contrib/zlib/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -289,12 +254,12 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zconf.h.cmakein;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckTypeSize.cmake;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zconf.h.cmakein;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/aamee/Documents/Parallel-Defered-Renderer/api/assimp/contrib/zlib/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/api/assimp/contrib/zlib/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/aamee/Documents/Parallel-Defered-Renderer -BC:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/Users/aamee/Documents/Parallel-Defered-Renderer/build_Debug/api/assimp/contrib/zlib/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer -BC:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/build_Debug --check-stamp-file C:/programming/side-projects/Parallel-project/Parallel-Defered-Renderer/build_Debug/api/assimp/contrib/zlib/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -302,43 +267,42 @@ endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
-      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-4.2\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-4.2\Modules\CheckTypeSize.cmake;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zconf.h.cmakein;C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.29\Modules\CheckCSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckFunctionExists.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFile.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\CMake\share\cmake-3.29\Modules\CheckTypeSize.cmake;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zconf.h.cmakein;C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zlib.pc.cmakein;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\adler32.c" />
-    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\compress.c" />
-    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\crc32.c" />
-    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\deflate.c" />
-    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\gzclose.c" />
-    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\gzlib.c" />
-    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\gzread.c" />
-    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\gzwrite.c" />
-    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\inflate.c" />
-    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\infback.c" />
-    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\inftrees.c" />
-    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\inffast.c" />
-    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\trees.c" />
-    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\uncompr.c" />
-    <ClCompile Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zutil.c" />
-    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\zconf.h" />
-    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zlib.h" />
-    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\crc32.h" />
-    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\deflate.h" />
-    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\gzguts.h" />
-    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\inffast.h" />
-    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\inffixed.h" />
-    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\inflate.h" />
-    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\inftrees.h" />
-    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\trees.h" />
-    <ClInclude Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zutil.h" />
+    <ClCompile Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\adler32.c" />
+    <ClCompile Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\compress.c" />
+    <ClCompile Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\crc32.c" />
+    <ClCompile Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\deflate.c" />
+    <ClCompile Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\gzclose.c" />
+    <ClCompile Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\gzlib.c" />
+    <ClCompile Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\gzread.c" />
+    <ClCompile Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\gzwrite.c" />
+    <ClCompile Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\inflate.c" />
+    <ClCompile Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\infback.c" />
+    <ClCompile Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\inftrees.c" />
+    <ClCompile Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\inffast.c" />
+    <ClCompile Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\trees.c" />
+    <ClCompile Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\uncompr.c" />
+    <ClCompile Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zutil.c" />
+    <ClInclude Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\api\assimp\contrib\zlib\zconf.h" />
+    <ClInclude Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zlib.h" />
+    <ClInclude Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\crc32.h" />
+    <ClInclude Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\deflate.h" />
+    <ClInclude Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\gzguts.h" />
+    <ClInclude Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\inffast.h" />
+    <ClInclude Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\inffixed.h" />
+    <ClInclude Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\inflate.h" />
+    <ClInclude Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\inftrees.h" />
+    <ClInclude Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\trees.h" />
+    <ClInclude Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\api\assimp\contrib\zlib\zutil.h" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\ZERO_CHECK.vcxproj">
-      <Project>{A0F2C44B-67AF-323E-8A5C-EBABF1169E11}</Project>
+    <ProjectReference Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\ZERO_CHECK.vcxproj">
+      <Project>{F19209AE-AC83-3076-8156-12CE6A125FF9}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\aamee\Documents\Parallel-Defered-Renderer\build_Debug\CMakeFiles\d38235379e96bc846cf5d2993c277c37\INSTALL_force.rule">
+    <CustomBuild Include="C:\programming\side-projects\Parallel-project\Parallel-Defered-Renderer\build_Debug\CMakeFiles\dd4f6c4c8be73ecab499c18a43da0cc0\INSTALL_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{58E967DB-300A-3C09-A0FE-4ECCD90B6279}</UniqueIdentifier>
+      <UniqueIdentifier>{E6828BED-220C-3242-A0D2-F7A3C48B3B8D}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -1,0 +1,50 @@
+# Phase 3: High Availability Rendering Service
+# Requirements file for Python dependencies
+
+# ===========================================
+# CORE DEPENDENCIES (Required)
+# ===========================================
+
+# gRPC and Protocol Buffers
+grpcio>=1.59.0
+grpcio-tools>=1.59.0
+protobuf>=4.24.0
+
+# Async support
+grpcio-reflection>=1.59.0
+
+# Metrics and monitoring
+prometheus-client>=0.18.0
+
+# Data processing
+numpy>=1.24.0
+Pillow>=10.0.0
+
+# Logging and utilities
+colorlog>=6.7.0
+python-json-logger>=2.0.7
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+
+# CLI and configuration
+click>=8.1.0
+pyyaml>=6.0.1
+
+# For simulating frame data
+opencv-python>=4.8.0
+
+# HTTP for health checks
+requests>=2.31.0
+
+# Concurrent utilities (retry logic)
+tenacity>=8.2.0
+
+# ===========================================
+# OPTIONAL DEPENDENCIES (Bonus Feature)
+# ===========================================
+
+# Spark Streaming (for bonus - requires Java JDK 8/11/17)
+# Uncomment below if you want Spark streaming support:
+# pyspark>=3.5.0
